@@ -8,7 +8,9 @@ html(lang="ru")
     script(src="assets/scripts/jquery.min.js")
     script(src="assets/scripts/slick.min.js")
     script(src="assets/scripts/main.js")
-    title 
-      block title
+    title Медицинский центр
   body
-    block content
+    include common/header
+    .wrapper
+      block content
+    include common/footer
