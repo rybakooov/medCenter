@@ -1,0 +1,259 @@
+extends ../template
+block title
+  | 4.1.3.1 Параспорт
+block content
+  .bannerWrap
+    .bannerBgWrap
+      img(src="assets/images/paraBg.png", alt="Центр здоровья").bannerBg
+    .banner.banner_program
+      .banner-desc
+        p.banner-desc__suptitle Программа реабилитации
+        h1.banner-desc__title Параспорт
+        a(href="#").banner-desc__order 
+          img(src="assets/images/order.png", alt="")
+          | Оставить<br>заявку
+      .banner-img
+        img(src="assets/images/paraBan.png", alt="Дышит в трубку")
+      p.banner__placeholder Лечение
+      form.banner-form
+        input(type="text" style="display: none;").hiddenInputForSelectors
+        label.label
+          .label-view.select-controller
+            .label-view-imgbox
+              img(src="assets/images/program-icon.png", alt="program-icon")
+            .label-view__placeholder Выбрать программу
+            .label-view__value
+            .label-view__triangle 
+          .select-dropDown(data-value="")
+            .select-dropDown__item 123
+            .select-dropDown__item 123
+        label.label
+          .label-view.select-controller
+            .label-view-imgbox
+              img(src="assets/images/calendar-icon.png", alt="calendar-icon")
+            .label-view__placeholder Выбрать программу
+            .label-view__value
+            .label-view__triangle 
+          .select-dropDown(data-value="")
+            .select-dropDown__item 123
+            .select-dropDown__item 123
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество реабилитантов").label-view__input
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество сопровождающих").label-view__input
+        button(type="submit").btn.btn_accent.banner-form__btn Рассчитать стоимость
+  .advantages
+    .advantages-wrap
+      h3.advantages__title Преимущества
+      a(href="#").btn.btn_blue.advantages__order Пройти опрос
+      .advantages-row
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/med.png", alt="")
+          p.advantages-row-item__title Медицинская лицензия
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/sreda.png", alt="")
+          p.advantages-row-item__title Доступная среда
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/clock.png", alt="")
+          p.advantages-row-item__title Круглосуточная мед.помощь
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/beach.png", alt="")
+          p.advantages-row-item__title Собственный пляж
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/personal.png", alt="")
+          p.advantages-row-item__title Опытный персонал
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/razdevalki.png", alt="")
+          p.advantages-row-item__title Раздевалки на пляже
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/sea.png", alt="")
+          p.advantages-row-item__title Чистейшее море
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/rooms.png", alt="")
+          p.advantages-row-item__title Разная категория номеров
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/plosh.png", alt="")
+          p.advantages-row-item__title Площадь территории
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/stadium.png", alt="")
+          p.advantages-row-item__title 17 спортивных сооружений
+  .indications
+    .indications-wrap
+      .indications-desc
+        p.indications-desc__title Показания
+        p.indications-desc__subtitle.indications-desc__subtitle_small Нарушения опорно-двигательного<br>аппарата<br>Детский церебральный паралич<br>(гемиплегия)<br>Детский церебральный паралич<br>(диплегия)<br>Последствия перенесенного инсульта
+        p.indications-desc__star *Перечень и объем услуг определяется индивидуально в соответствии медицинскими показаниями и состоянием гостя
+      .indications-imgbox
+        p.indications-imgbox__placeholder Лечение
+        .indications-imgbox-img
+          img(src="assets/images/paraIns.png", alt="").indications-imgbox-img__img
+  .carousel
+    .carousel-wrap
+      h2.defaultTitle.carousel__title Программы
+      p.defaultSubtitle.carousel__subtitle Параспорта
+      .carousel__title
+      .carousel-slider.carousel-slider_not
+        .carousel-slider-item(style="background-image: url('assets/images/para-1.png');")
+          p.carousel-slider-item__before — Виды спорта
+          .carousel-slider-item__title Актив-<br>лайф
+          p.carousel-slider-item__text При нарушении ОДА, ДЦП (гемиплегия)
+        .carousel-slider-item.carousel-slider-item_center(style="background-image: url('assets/images/para-2.png');")
+          p.carousel-slider-item__before — Виды спорта
+          .carousel-slider-item__title Дипл-<br>лайф
+          p.carousel-slider-item__text При ДЦП (диплегия)
+        .carousel-slider-item(style="background-image: url('assets/images/para-3.png');")
+          p.carousel-slider-item__before — Виды спорта
+          .carousel-slider-item__title Лайт<br>спорт
+          p.carousel-slider-item__text После инсульта
+  .results
+    .results-wrap
+      h3.defaultTitle.results__title Результат программы
+      h3.defaultSubtitle.results__subtitle Краткое описание
+      .results-row
+        .results-row-imgbox
+          p.results-row-imgbox__placeholder Здоровье
+          .results-row-imgbox-img
+            img(src="assets/images/paraRes.png", alt="").results-row-imgbox-img__img
+        .results-row-desc
+          ul.results-row-desc-ul
+            li.results-row-desc-ul__li
+              span Восстановление&nbsp;
+              | утраченного контакта с окружающим миром
+            li.results-row-desc-ul__li
+              span Воссоединение&nbsp;
+              | с обществом 
+            li.results-row-desc-ul__li
+              span Увеличение&nbsp;
+              | двигательной активности
+            li.results-row-desc-ul__li
+              span Увеличение&nbsp;
+              | силы мышц
+            li.results-row-desc-ul__li
+              span Увеличение&nbsp;
+              | уровня физической подготовки и выносливости
+            li.results-row-desc-ul__li
+              span Функциональное&nbsp;
+              | улучшение передвижения
+  .video
+    .video-wrap
+      p.defaultTitle.video__title Видео
+      p.defaultSubtitle.video__subtitle Краткое описание
+      <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  .supa
+    .supa-wrap
+      p.defaultTitle.supa__title Проживание
+      p.defaultSubtitle.supa__subtitle С кратким описанием
+      .supaSlider.owl-carousel
+        .supaSlider-item
+          .supaSlider-insideSliderBlock
+            .supaSlider-insideSliderBlock__prev
+              img(src="assets/images/arrow-supaSlider.png", style="transform: rotate(180deg);" alt="")
+            .supaSlider-insideSliderBlock-num
+              .supaSlider-insideSliderBlock-num__current 01
+              .supaSlider-insideSliderBlock-num__all 04
+            .supaSlider-insideSliderBlock__next
+              img(src="assets/images/arrow-supaSlider.png", alt="")
+          .supaSlider-insideSlider
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+          .supaSlider-item-desc
+            .supaSlider-item-desc-top
+              p.supaSlider-item-desc-top__title Корпус<br>Реабилитационный
+              .supaSlider-item-desc-top-right
+                .supaSlider-item-desc-top-right__icon
+                  img(src="assets/images/wave_gray.png", alt="")
+                p.supaSlider-item-desc-top-right__text 200 м. до моря
+            .supaSlider-item-desc-main
+              p.supaSlider-item-desc-main__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas vel. 
+              .supaSlider-item-desc-main__price Цена за сутки:&nbsp;
+                span 2 500 РУБ.
+            .supaSlider-item-desc__placeholder Проживание
+        .supaSlider-item
+          .supaSlider-insideSliderBlock
+            .supaSlider-insideSliderBlock__prev
+              img(src="assets/images/arrow-supaSlider.png", style="transform: rotate(180deg);" alt="")
+            .supaSlider-insideSliderBlock-num
+              .supaSlider-insideSliderBlock-num__current 01
+              .supaSlider-insideSliderBlock-num__all 04
+            .supaSlider-insideSliderBlock__next
+              img(src="assets/images/arrow-supaSlider.png", alt="")
+          .supaSlider-insideSlider
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+          .supaSlider-item-desc
+            .supaSlider-item-desc-top
+              p.supaSlider-item-desc-top__title Корпус<br>Реабилитационный
+              .supaSlider-item-desc-top-right
+                .supaSlider-item-desc-top-right__icon
+                  img(src="assets/images/wave_gray.png", alt="")
+                p.supaSlider-item-desc-top-right__text 200 м. до моря
+            .supaSlider-item-desc-main
+              p.supaSlider-item-desc-main__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas vel. 
+              .supaSlider-item-desc-main__price Цена за сутки:&nbsp;
+                span 2 500 РУБ.
+            .supaSlider-item-desc__placeholder Проживание
+  .gallery
+    .gallery-wrap
+      .gallery-left
+        .gallery-left-desc
+          p.gallery-left-desc__title Фотогалерея
+          p.gallery-left-desc__text Реабилитация
+        .gallery-left-grid
+          .gallery-left-grid-img
+            img(src="assets/images/girl.png", alt="")
+          .gallery-left-grid-img
+            img(src="assets/images/girl.png", alt="")
+          .gallery-left-grid-img
+            img(src="assets/images/girl.png", alt="")
+          .gallery-left-grid-img
+            img(src="assets/images/girl.png", alt="")
+      .gallery-right
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+      

@@ -1,2 +1,141 @@
 extends ../template
+block title
+  | 4. Центр здоровья
 block content
+  .bannerWrap
+    .bannerBgWrap
+      img(src="assets/images/index_bg.png", alt="Центр здоровья").bannerBg
+    .banner.banner_onIndex
+      .banner-desc
+        h1.banner-desc__title Центр<br>
+          span здоровья
+        p.banner-desc__text Lorem ipsum dolor sit amet, consectetur
+        ul.banner-desc-ul 
+          li Реабилитация
+          li Санаторно-курортное лечение
+      .banner-img
+        img(src="assets/images/indBannerImg.png", alt="Дышит в трубку")
+      p.banner__placeholder Лечение
+      form.banner-form
+        input(type="text" style="display: none;").hiddenInputForSelectors
+        label.label
+          .label-view.select-controller
+            .label-view-imgbox
+              img(src="assets/images/program-icon.png", alt="program-icon")
+            .label-view__placeholder Выбрать программу
+            .label-view__value
+            .label-view__triangle 
+          .select-dropDown(data-value="")
+            .select-dropDown__item 123
+            .select-dropDown__item 123
+        label.label
+          .label-view.select-controller
+            .label-view-imgbox
+              img(src="assets/images/calendar-icon.png", alt="calendar-icon")
+            .label-view__placeholder Выбрать программу
+            .label-view__value
+            .label-view__triangle 
+          .select-dropDown(data-value="")
+            .select-dropDown__item 123
+            .select-dropDown__item 123
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество реабилитантов").label-view__input
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество сопровождающих").label-view__input
+        button(type="submit").btn.btn_accent.banner-form__btn Рассчитать стоимость
+  .textBlock.textBlock_index
+    .textBlock-wrap
+      .textBlock-images
+        img(src="assets/images/ind-about-1.png", alt="").textBlock-images__img
+        img(src="assets/images/ind-about-2.png", alt="").textBlock-images__img
+      .textBlock-desc
+        h2.textBlock-desc__title Центр здоровья<br>Эволюция
+        p.textBlock-desc__text Центр здоровья «Эволюция» располагается в уникальной климатической зоне пересечения трех потоков воздуха: морской, степной и южный. Потоки воздуха, приходящие с моря, насыщены озоном, частицами минеральных солей брома, хлористого натрия, кальция, магния и другими составными микроэлементами морской воды. Воздушные потоки создают эффект ингаляции на открытом воздухе. Центр  находится на закрытой охраняемой территории на первой линии черноморского 
+  .stat
+    .stat-wrap
+      .stat-item
+        p.stat-item__big 10+
+        p.stat-item__small гостей прошли курсы<br>Санаторно-Курортных<br>программ
+      .stat-item
+        p.stat-item__big 50+
+        p.stat-item__small гостей прошли<br>курсы программ<br>Реабилитации
+      .stat-item
+        p.stat-item__big 90%
+        p.stat-item__small гостей<br>возвращаются<br>к нам
+  .directions
+    .directions-wrap
+      h3.defaultTitle.directions__title Направления
+      h3.defaultSubtitle.directions__subtitle Отражение сущности объекта
+      .directions-row
+        a(href="#" style="background-image: url('assets/images/paralich.png')").directions-row-item
+          p.directions-row-item__title реабилитация
+          ul
+            li Детский церебральный паралич
+            li Опорно-двигательный аппарат
+            li Черепно-мозговая травма
+            li Инсульт
+            li Активное долголетие
+            li Параспорт
+          .btn.btn_accent.directions-row-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+        a(href="#" style="background-image: url('assets/images/sanatoryi.png')").directions-row-item
+          p.directions-row-item__title санаторно-<br>курортное<br>лечение
+          ul
+            li Легкое дыхание
+            li Легкая походка
+            li Движение — это жизнь
+            li Инсульт
+            li Активное долголетие
+            li Параспорт
+          .btn.btn_accent.directions-row-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+  .advantages
+    .advantages-wrap
+      h3.advantages__title Преимущества
+      .advantages-row
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/med.png", alt="")
+          p.advantages-row-item__title Медицинская лицензия
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/sreda.png", alt="")
+          p.advantages-row-item__title Доступная среда
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/clock.png", alt="")
+          p.advantages-row-item__title Круглосуточная мед.помощь
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/beach.png", alt="")
+          p.advantages-row-item__title Собственный пляж
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/personal.png", alt="")
+          p.advantages-row-item__title Опытный персонал
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/razdevalki.png", alt="")
+          p.advantages-row-item__title Раздевалки на пляже
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/sea.png", alt="")
+          p.advantages-row-item__title Чистейшее море
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/rooms.png", alt="")
+          p.advantages-row-item__title Разная категория номеров
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/plosh.png", alt="")
+          p.advantages-row-item__title Площадь территории
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/stadium.png", alt="")
+          p.advantages-row-item__title 17 спортивных сооружений

@@ -1,0 +1,256 @@
+extends ../template
+block title
+  | 4.1. Реабилитация
+block content
+  .bannerWrap.bannerWrap_reab
+    .bannerBgWrap
+      img(src="assets/images/reabIndBg.png", alt="Центр здоровья").bannerBg
+    .banner.banner_onIndex
+      .banner-desc
+        h1.banner-desc__title Реабилитация
+        p.banner-desc__text Lorem ipsum dolor sit amet, consectetur
+      .banner-img
+        img(src="assets/images/reabInd.png", alt="Дышит в трубку")
+      p.banner__placeholder Лечение
+      form.banner-form
+        input(type="text" style="display: none;").hiddenInputForSelectors
+        label.label
+          .label-view.select-controller
+            .label-view-imgbox
+              img(src="assets/images/program-icon.png", alt="program-icon")
+            .label-view__placeholder Выбрать программу
+            .label-view__value
+            .label-view__triangle 
+          .select-dropDown(data-value="")
+            .select-dropDown__item 123
+            .select-dropDown__item 123
+        label.label
+          .label-view.select-controller
+            .label-view-imgbox
+              img(src="assets/images/calendar-icon.png", alt="calendar-icon")
+            .label-view__placeholder Выбрать программу
+            .label-view__value
+            .label-view__triangle 
+          .select-dropDown(data-value="")
+            .select-dropDown__item 123
+            .select-dropDown__item 123
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество реабилитантов").label-view__input
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество сопровождающих").label-view__input
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество сопровождающих").label-view__input
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество сопровождающих").label-view__input
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество сопровождающих").label-view__input
+        button(type="submit").btn.btn_accent.banner-form__btn Рассчитать стоимость
+  .carousel
+    .carousel-wrap
+      h2.defaultTitle.carousel__title Программы
+      p.defaultSubtitle.carousel__subtitle Отражение сущности объекта
+      .carousel__title
+      .carousel-slider
+        a.carousel-slider-item(style="background-image: url('assets/images/reabSl1.png');" href="#")
+          p.carousel-slider-item__before — Абилитация
+          .carousel-slider-item__title Активное долголетие
+          p.carousel-slider-item__text При нарушениях опорно-двигательного аппарата и травмах позвоночника.
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+        a.carousel-slider-item(style="background-image: url('assets/images/reabSl2.png');" href="#")
+          p.carousel-slider-item__before — Реабилитация
+          .carousel-slider-item__title Инсульт
+          p.carousel-slider-item__text При последствиях перенесенного инсульта 
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+        a.carousel-slider-item(style="background-image: url('assets/images/reabSl3.png');" href="#")
+          p.carousel-slider-item__before — Спорт
+          .carousel-slider-item__title Доступный спорт
+          p.carousel-slider-item__text Общее физическое развитие людей с ограниченными возможностями 
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+        a.carousel-slider-item(style="background-image: url('assets/images/reabSl1.png');" href="#")
+          p.carousel-slider-item__before — Абилитация
+          .carousel-slider-item__title Активное долголетие
+          p.carousel-slider-item__text При нарушениях опорно-двигательного аппарата и травмах позвоночника.
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+        a.carousel-slider-item(style="background-image: url('assets/images/reabSl2.png');" href="#")
+          p.carousel-slider-item__before — Реабилитация
+          .carousel-slider-item__title Инсульт
+          p.carousel-slider-item__text При нарушениях опорно-двигательного аппарата и травмах позвоночника.
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+        a.carousel-slider-item(style="background-image: url('assets/images/reabSl3.png');" href="#")
+          p.carousel-slider-item__before — Спорт
+          .carousel-slider-item__title Активное долголетие
+          p.carousel-slider-item__text При нарушениях опорно-двигательного аппарата и травмах позвоночника.
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+  .stat
+    .stat-wrap
+      .stat-item
+        p.stat-item__big 10+
+        p.stat-item__small гостей прошли курсы<br>Санаторно-Курортных<br>программ
+      .stat-item
+        p.stat-item__big 50+
+        p.stat-item__small гостей прошли<br>курсы программ<br>Реабилитации
+      .stat-item
+        p.stat-item__big 90%
+        p.stat-item__small гостей<br>возвращаются<br>к нам
+  .textBlock.textBlock_rtl.textBlock_reab
+    .textBlock-wrap
+      .textBlock-images
+        img(src="assets/images/ind-about-1.png", alt="").textBlock-images__img
+        img(src="assets/images/ind-about-2.png", alt="").textBlock-images__img
+        p.textBlock-images__text Реабилитация
+      .textBlock-desc
+        h2.textBlock-desc__title Реабилитационный<br>центр
+        p.textBlock-desc__text Реабилитационный центр в Крыму «Эволюция» является уникальной площадкой, где каждый может улучшить здоровье и повысить качество жизни. Доступная среда центра с общей территорией 64 га позволяет нашим гостям свободно перемещаться по территории, забывая о сложностях, с которыми они могут столкнуться в повседневной жизни. А собственный песчаный пляж длиной 1 км и целебный воздух западного побережья способствует повышению иммунитета и улучшению общего состояния здоровья. Большая медицинская база нашего центра позволяет принимать большое количество гостей, приезжающих с целью реабилитации и оздоровления.
+  .video
+    .video-wrap
+      p.defaultTitle.video__title Видео
+      p.defaultSubtitle.video__subtitle Краткое описание
+      <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  .supa
+    .supa-wrap
+      p.defaultTitle.supa__title Проживание
+      p.defaultSubtitle.supa__subtitle С кратким описанием
+      .supaSlider.owl-carousel
+        .supaSlider-item
+          .supaSlider-insideSliderBlock
+            .supaSlider-insideSliderBlock__prev
+              img(src="assets/images/arrow-supaSlider.png", style="transform: rotate(180deg);" alt="")
+            .supaSlider-insideSliderBlock-num
+              .supaSlider-insideSliderBlock-num__current 01
+              .supaSlider-insideSliderBlock-num__all 04
+            .supaSlider-insideSliderBlock__next
+              img(src="assets/images/arrow-supaSlider.png", alt="")
+          .supaSlider-insideSlider
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+          .supaSlider-item-desc
+            .supaSlider-item-desc-top
+              p.supaSlider-item-desc-top__title Корпус<br>Реабилитационный
+              .supaSlider-item-desc-top-right
+                .supaSlider-item-desc-top-right__icon
+                  img(src="assets/images/wave_gray.png", alt="")
+                p.supaSlider-item-desc-top-right__text 200 м. до моря
+            .supaSlider-item-desc-main
+              p.supaSlider-item-desc-main__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas vel. 
+              .supaSlider-item-desc-main__price Цена за сутки:&nbsp;
+                span 2 500 РУБ.
+            .supaSlider-item-desc__placeholder Проживание
+        .supaSlider-item
+          .supaSlider-insideSliderBlock
+            .supaSlider-insideSliderBlock__prev
+              img(src="assets/images/arrow-supaSlider.png", style="transform: rotate(180deg);" alt="")
+            .supaSlider-insideSliderBlock-num
+              .supaSlider-insideSliderBlock-num__current 01
+              .supaSlider-insideSliderBlock-num__all 04
+            .supaSlider-insideSliderBlock__next
+              img(src="assets/images/arrow-supaSlider.png", alt="")
+          .supaSlider-insideSlider
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+          .supaSlider-item-desc
+            .supaSlider-item-desc-top
+              p.supaSlider-item-desc-top__title Корпус<br>Реабилитационный
+              .supaSlider-item-desc-top-right
+                .supaSlider-item-desc-top-right__icon
+                  img(src="assets/images/wave_gray.png", alt="")
+                p.supaSlider-item-desc-top-right__text 200 м. до моря
+            .supaSlider-item-desc-main
+              p.supaSlider-item-desc-main__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas vel. 
+              .supaSlider-item-desc-main__price Цена за сутки:&nbsp;
+                span 2 500 РУБ.
+            .supaSlider-item-desc__placeholder Проживание
+  .advantages.advantages_4
+    .advantages-wrap
+      h3.advantages__title Преимущества
+      .advantages-row
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/reabAdv/1.png", alt="")
+          p.advantages-row-item__title Доступные<br>развлечения
+          p.advantages-row-item__text Пробуем новые<br>игры и помогаем<br>друг другу
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/reabAdv/2.png", alt="")
+          p.advantages-row-item__title Комфортное<br>передвижение
+          p.advantages-row-item__text Ровные<br>дороги без<br>перепада высот 
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/reabAdv/3.png", alt="")
+          p.advantages-row-item__title Доступное<br>размещение
+          p.advantages-row-item__text Широкие двери,<br>пандусы, лифты<br>и отбойники
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/reabAdv/4.png", alt="")
+          p.advantages-row-item__title Лучшая<br>локация
+          p.advantages-row-item__text Приморско-степной<br>климат в Крыму<br>признан лечебным
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/reabAdv/5.png", alt="")
+          p.advantages-row-item__title Доступная<br>инфраструктура
+          p.advantages-row-item__text 64 га<br>доступной<br>территории
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/reabAdv/6.png", alt="")
+          p.advantages-row-item__title Доступный<br>пляж
+          p.advantages-row-item__text Специальные<br>дорожки и пандусы<br>для входа в воду. 
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/reabAdv/7.png", alt="")
+          p.advantages-row-item__title Условия<br>адаптации
+          p.advantages-row-item__text Общение с<br>многочисленными<br>единомышленниками
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/reabAdv/8.png", alt="")
+          p.advantages-row-item__title Безопасная<br>территория
+          p.advantages-row-item__text Специальные<br>дорожки и пандусы<br>для входа в воду. 
+  .textImg
+    .textImg-wrap
+      .textImg-wrap-imgbox
+        p.textImg-wrap-imgbox__secondName Колпаков
+        .textImg-wrap-imgbox-img
+          img(src="assets/images/ind-about-1.png", alt="").textImg-wrap-imgbox-img__img
+      .textImg-wrap-desc
+        p.textImg-wrap-desc__title Мы знаем,<br>
+          span что для Вас важно
+        p.textImg-wrap-desc__text Идейный вдохновитель, куратор и организатор программ  - Олег Колпаков. Регбист-колясочник из Керчи, координатор реабилитационной деятельности в Центре спорта Эволюция более 10 лет, чемпион и призер соревнований по Бочче на колясках.

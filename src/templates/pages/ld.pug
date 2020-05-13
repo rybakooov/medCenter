@@ -1,0 +1,344 @@
+extends ../template
+block title
+  | 4.2.1. Легкое дыхание
+block content
+  .bannerWrap
+    .bannerBgWrap
+      img(src="assets/images/ldBg.png", alt="Центр здоровья").bannerBg
+    .banner.banner_program
+      .banner-desc
+        p.banner-desc__suptitle ПРОГРАММА САНАТОРНО-<br>КУРОРТНОГО ЛЕЧЕНИЯ
+        h1.banner-desc__title Легкое<br>дыхание
+        a(href="#").banner-desc__order 
+          img(src="assets/images/order.png", alt="")
+          | Оставить<br>заявку
+      .banner-img
+        img(src="assets/images/ldBan.png", alt="Дышит в трубку")
+      p.banner__placeholder Лечение
+      form.banner-form
+        input(type="text" style="display: none;").hiddenInputForSelectors
+        label.label
+          .label-view.select-controller
+            .label-view-imgbox
+              img(src="assets/images/program-icon.png", alt="program-icon")
+            .label-view__placeholder Выбрать программу
+            .label-view__value
+            .label-view__triangle 
+          .select-dropDown(data-value="")
+            .select-dropDown__item 123
+            .select-dropDown__item 123
+        label.label
+          .label-view.select-controller
+            .label-view-imgbox
+              img(src="assets/images/calendar-icon.png", alt="calendar-icon")
+            .label-view__placeholder Выбрать программу
+            .label-view__value
+            .label-view__triangle 
+          .select-dropDown(data-value="")
+            .select-dropDown__item 123
+            .select-dropDown__item 123
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество реабилитантов").label-view__input
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество сопровождающих").label-view__input
+        button(type="submit").btn.btn_accent.banner-form__btn Рассчитать стоимость
+  .advantages
+    .advantages-wrap
+      h3.advantages__title Преимущества
+      a(href="#").btn.btn_blue.advantages__order Пройти опрос
+      .advantages-row
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/med.png", alt="")
+          p.advantages-row-item__title Медицинская лицензия
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/sreda.png", alt="")
+          p.advantages-row-item__title Доступная среда
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/clock.png", alt="")
+          p.advantages-row-item__title Круглосуточная мед.помощь
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/beach.png", alt="")
+          p.advantages-row-item__title Собственный пляж
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/personal.png", alt="")
+          p.advantages-row-item__title Опытный персонал
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/razdevalki.png", alt="")
+          p.advantages-row-item__title Раздевалки на пляже
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/sea.png", alt="")
+          p.advantages-row-item__title Чистейшее море
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/rooms.png", alt="")
+          p.advantages-row-item__title Разная категория номеров
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/plosh.png", alt="")
+          p.advantages-row-item__title Площадь территории
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/indAdv/stadium.png", alt="")
+          p.advantages-row-item__title 17 спортивных сооружений
+  .treatment
+    .treatment-wrap
+      .treatment-desc
+        p.treatment-desc__placeholder лечение
+        p.treatment-desc__title Показания
+        ul.treatment-desc-ul
+          li.treatment-desc-ul__li Состояние после перенесённой пневмонии (не менее 3-х месяцев после обострения
+          li.treatment-desc-ul__li Хронический бронхит в период ремиссии
+          li.treatment-desc-ul__li Бронхиальная астма легкой и средней степени тяжести в период ремиссии
+          li.treatment-desc-ul__li Хронические заболевания носоглотки, пазух, миндалин (ринит), синусит, гайморит, фарингит, тонзиллит
+        p.treatment-desc__star * Количество включенных процедур зависит от продолжительности курса и возможных индивидуальных противопоказаний.
+      .treatment-img
+        img(src="assets/images/treatLD.png", alt="").treatment-img__img
+      .treatment-desc
+        p.treatment-desc__title Методы лечения
+        ul.treatment-desc-ul
+          li.treatment-desc-ul__li Консультирование специалистами, функциональная диагностика
+          li.treatment-desc-ul__li Медикаментозная терапия (по показаниям)
+          li.treatment-desc-ul__li Диетотерапия
+          li.treatment-desc-ul__li Оксигенотерапия (кислородный коктейль
+          li.treatment-desc-ul__li Фитотерапия (фито чаи)
+          li.treatment-desc-ul__li Водолечение (циркулярный душ, лечебные ароматические ванны, вихревые ванны) один из видов
+          li.treatment-desc-ul__li Аппаратная физиотерапия индуктотермия, магнитотерапия, УЗ — терапия, лазеротерапия, электросон терапия, дарсонваль терапия, амплипультерапия) один из видов
+        a(href="#").treatment-desc__more Подробнее
+  .results
+    .results-wrap
+      h3.defaultTitle.results__title Результат программы
+      h3.defaultSubtitle.results__subtitle Краткое описание
+      .results-row
+        .results-row-imgbox
+          p.results-row-imgbox__placeholder Здоровье
+          .results-row-imgbox-img
+            img(src="assets/images/ldRes.png", alt="").results-row-imgbox-img__img
+        .results-row-desc
+          p.results-row-desc__text <strong>После программы лечения</strong> происходит улучшение самочувствия и общего состояния организма, удлинение периода ремиссии, повышение устойчивости организма к простудным заболеваниям, уменьшение случаев острых респираторных заболеваний, нормализация носового дыхания, ликвидация и уменьшение воспалительного процесса.
+  .columns
+    .columns-wrap
+      p.defaultTitle Какой-то заголовок
+      p.defaultSubtitle Перечень преимуществ
+      .columns-row
+        .columns-short
+          .columns-short-img
+            img(src="assets/images/col-1.png", alt="").columns-short-img__img
+          p.columns__title В стоимость<br>программ включено:
+          ul.columns-ul
+            li.columns-ul__li Профильное лечение
+            li.columns-ul__li Консультации лечащего врача
+            li.columns-ul__li Посещение комплекса саун и бассейнов (по назначению врача
+        .columns-long
+          p.columns__title Важно<br>знать
+          ul.columns-ul
+            li.columns-ul__li При приобретении курса необходимо иметь <span>санаторно-курортную карту или выписку из амбулаторной карты</span>
+            li.columns-ul__li Курс лечения <span>назначается врачом</span> индивидуально с учётом пожеланий гостя, наличия показаний и противопоказаний, совместимости процедур
+            li.columns-ul__li Прочие процедуры, не включённые в программу, отпускаются <span>за дополнительную плату</span>
+            li.columns-ul__li Медикаментозное лечение в стоимость курса лечения <span>не входит</span>
+            li.columns-ul__li Экстренная медицинская неотложная помощь оказывается <span>бесплатно</span>
+          .columns-long-img
+            img(src="assets/images/col-2.png", alt="").columns-short-img__img
+  .video
+    .video-wrap
+      p.defaultTitle.video__title Видео
+      p.defaultSubtitle.video__subtitle Краткое описание
+      <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  .supa
+    .supa-wrap
+      p.defaultTitle.supa__title Проживание
+      p.defaultSubtitle.supa__subtitle С кратким описанием
+      .supaSlider.owl-carousel
+        .supaSlider-item
+          .supaSlider-insideSliderBlock
+            .supaSlider-insideSliderBlock__prev
+              img(src="assets/images/arrow-supaSlider.png", style="transform: rotate(180deg);" alt="")
+            .supaSlider-insideSliderBlock-num
+              .supaSlider-insideSliderBlock-num__current 01
+              .supaSlider-insideSliderBlock-num__all 04
+            .supaSlider-insideSliderBlock__next
+              img(src="assets/images/arrow-supaSlider.png", alt="")
+          .supaSlider-insideSlider
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+          .supaSlider-item-desc
+            .supaSlider-item-desc-top
+              p.supaSlider-item-desc-top__title Корпус<br>Реабилитационный
+              .supaSlider-item-desc-top-right
+                .supaSlider-item-desc-top-right__icon
+                  img(src="assets/images/wave_gray.png", alt="")
+                p.supaSlider-item-desc-top-right__text 200 м. до моря
+            .supaSlider-item-desc-main
+              p.supaSlider-item-desc-main__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas vel. 
+              .supaSlider-item-desc-main__price Цена за сутки:&nbsp;
+                span 2 500 РУБ.
+            .supaSlider-item-desc__placeholder Проживание
+        .supaSlider-item
+          .supaSlider-insideSliderBlock
+            .supaSlider-insideSliderBlock__prev
+              img(src="assets/images/arrow-supaSlider.png", style="transform: rotate(180deg);" alt="")
+            .supaSlider-insideSliderBlock-num
+              .supaSlider-insideSliderBlock-num__current 01
+              .supaSlider-insideSliderBlock-num__all 04
+            .supaSlider-insideSliderBlock__next
+              img(src="assets/images/arrow-supaSlider.png", alt="")
+          .supaSlider-insideSlider
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+          .supaSlider-item-desc
+            .supaSlider-item-desc-top
+              p.supaSlider-item-desc-top__title Корпус<br>Реабилитационный
+              .supaSlider-item-desc-top-right
+                .supaSlider-item-desc-top-right__icon
+                  img(src="assets/images/wave_gray.png", alt="")
+                p.supaSlider-item-desc-top-right__text 200 м. до моря
+            .supaSlider-item-desc-main
+              p.supaSlider-item-desc-main__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas vel. 
+              .supaSlider-item-desc-main__price Цена за сутки:&nbsp;
+                span 2 500 РУБ.
+            .supaSlider-item-desc__placeholder Проживание
+  .gallery
+    .gallery-wrap
+      .gallery-left
+        .gallery-left-desc
+          p.gallery-left-desc__title Фотогалерея
+          p.gallery-left-desc__text Детский церебральный паралич
+        .gallery-left-grid
+          .gallery-left-grid-img
+            img(src="assets/images/girl.png", alt="")
+          .gallery-left-grid-img
+            img(src="assets/images/girl.png", alt="")
+          .gallery-left-grid-img
+            img(src="assets/images/girl.png", alt="")
+          .gallery-left-grid-img
+            img(src="assets/images/girl.png", alt="")
+      .gallery-right
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+        .gallery-right-img  
+          img(src="assets/images/dcpBan.png", alt="")
+  .sea
+    .sea__wrapper
+      img(src="assets/images/child_camp/sea/sea-bg.png", alt="").sea__wrapper-bg
+      p.sea-title ДЛЯ ТЕХ, КТО ЦЕНИТ<br>ЧИСТЫЙ ПЛЯЖ
+      .sea-items
+        .sea-item
+          .sea-item-text Собственный песчаный пляж длиной 1000 м на берегу Черного моря прекрасно подходит для спокойного  и комфортного отдыха. На пляже есть шезлонги, пляжные зонты, солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты. 
+          img(src="assets/images/child_camp/sea/sea-sea1.jpg" alt="Море и Зонтики").sea-item-img
+        .sea-item
+          .sea-item-text Собственный песчаный пляж длиной 1000 м на берегу Черного моря прекрасно подходит для спокойного  и комфортного отдыха. На пляже есть шезлонги, пляжные зонты, солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты. 
+          img(src="assets/images/child_camp/sea/sea-sea2.jpg" alt="Море и Зонтики").sea-item-img
+          .sea-box
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-wifi.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Wi-Fi
+                p.sea-box-text Бесплатный Wi-Fi на<br>всей территории пляжа
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-shower.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Душ
+                p.sea-box-text Душевые кабинки<br>на всей территории
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-cab.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Кабинки
+                p.sea-box-text Имеются кабинки<br>для переодевания
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-toilet.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Биотуалет
+                p.sea-box-text На пляже<br>есть биотуалеты
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-umbrella.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Шезлонги
+                p.sea-box-text Шезлонги на<br>всей территории пляжа
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-toys-land.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Площадки
+                p.sea-box-text Имеется<br>детская площадка
+  .children-supa
+    .supa-wrap
+      p.defaultTitle.supa__title Также для комфортного отдыха
+      .supaSlider-insideSlider-wrap.supaSlider-item
+        p.children-supa__placeholder Трансфер
+        <div class="supaSlider-insideSliderBlock">
+          <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);" src="assets/images/arrowSlider.png"></div>
+          <div class="supaSlider-insideSliderBlock__next"><img src="assets/images/arrowSlider.png"></div>
+        </div>
+        .supaSlider-insideSlider
+          .supaSlider-insideSlider__item
+            p.children-supa__text Трансфер
+            a(href="#").btn.btn_accent.children-supa__btn Подробнее
+              img(src="assets/images/arrow-right.png" alt="arrow-right")
+            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", style="width" alt="")
+          .supaSlider-insideSlider__item
+            p.children-supa__text Трансфер
+            a(href="#").btn.btn_accent.children-supa__btn Подробнее
+              img(src="assets/images/arrow-right.png" alt="arrow-right")
+            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
+          .supaSlider-insideSlider__item
+            p.children-supa__text Трансфер
+            a(href="#").btn.btn_accent.children-supa__btn Подробнее
+              img(src="assets/images/arrow-right.png" alt="arrow-right")
+            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
+          .supaSlider-insideSlider__item
+            p.children-supa__text Трансфер
+            a(href="#").btn.btn_accent.children-supa__btn Подробнее
+              img(src="assets/images/arrow-right.png" alt="arrow-right")
+            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
+          .supaSlider-insideSlider__item
+            p.children-supa__text Трансфер
+            a(href="#").btn.btn_accent.children-supa__btn Подробнее
+              img(src="assets/images/arrow-right.png" alt="arrow-right")
+            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
+          .supaSlider-insideSlider__item
+            p.children-supa__text Трансфер
+            a(href="#").btn.btn_accent.children-supa__btn Подробнее
+              img(src="assets/images/arrow-right.png" alt="arrow-right")
+            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
+
+
+

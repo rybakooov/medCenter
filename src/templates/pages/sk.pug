@@ -1,0 +1,254 @@
+extends ../template
+block title
+  | 4.2 Санаторно-курортное лечение
+block content
+  .bannerWrap
+    .bannerBgWrap
+      img(src="assets/images/skBg.png", alt="Центр здоровья").bannerBg
+    .banner.banner_program
+      .banner-desc
+        h1.banner-desc__title Санаторно-<br>курортное<br>лечение
+        p.banner-desc__text Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Etiam ut urna feugiat.
+      .banner-img
+        img(src="assets/images/skImg.png", alt="Дышит в трубку")
+      p.banner__placeholder Лечение
+      form.banner-form
+        input(type="text" style="display: none;").hiddenInputForSelectors
+        label.label
+          .label-view.select-controller
+            .label-view-imgbox
+              img(src="assets/images/program-icon.png", alt="program-icon")
+            .label-view__placeholder Выбрать программу
+            .label-view__value
+            .label-view__triangle 
+          .select-dropDown(data-value="")
+            .select-dropDown__item 123
+            .select-dropDown__item 123
+        label.label
+          .label-view.select-controller
+            .label-view-imgbox
+              img(src="assets/images/calendar-icon.png", alt="calendar-icon")
+            .label-view__placeholder Выбрать программу
+            .label-view__value
+            .label-view__triangle 
+          .select-dropDown(data-value="")
+            .select-dropDown__item 123
+            .select-dropDown__item 123
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество реабилитантов").label-view__input
+        label.label
+          .label-view
+            .label-view-imgbox
+              img(src="assets/images/user-icon.png", alt="user-icon")
+            input(type="number" placeholder="Количество сопровождающих").label-view__input
+        button(type="submit").btn.btn_accent.banner-form__btn Рассчитать стоимость
+  .carousel
+    .carousel-wrap
+      h2.defaultTitle.carousel__title Программы
+      p.defaultSubtitle.carousel__subtitle Отражение сущности объекта
+      .carousel__title
+      .carousel-slider
+        a.carousel-slider-item(style="background-image: url('assets/images/sk-1.png');" href="#")
+          .carousel-slider-item__title Движение - это жизнь
+          p.carousel-slider-item__text Программа лечения заболевания периферической нервной системы
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+        a.carousel-slider-item(style="background-image: url('assets/images/sk-2.png');" href="#")
+          .carousel-slider-item__title Легкое дыхание
+          p.carousel-slider-item__text Программа лечения заболеваний органов дыхания и ЛОР – органов
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+        a.carousel-slider-item(style="background-image: url('assets/images/sk-3.png');" href="#")
+          .carousel-slider-item__title Легкая походка
+          p.carousel-slider-item__text Программа коррекции хронической патологии опорно-двигательного аппарата
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+        a.carousel-slider-item(style="background-image: url('assets/images/sk-1.png');" href="#")
+          .carousel-slider-item__title Движение - это жизнь
+          p.carousel-slider-item__text Программа лечения заболевания периферической нервной системы
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+        a.carousel-slider-item(style="background-image: url('assets/images/sk-2.png');" href="#")
+          .carousel-slider-item__title Легкое дыхание
+          p.carousel-slider-item__text Программа лечения заболеваний органов дыхания и ЛОР – органов
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")
+        a.carousel-slider-item(style="background-image: url('assets/images/sk-3.png');" href="#")
+          .carousel-slider-item__title Легкая походка
+          p.carousel-slider-item__text Программа коррекции хронической патологии опорно-двигательного аппарата
+          .btn.btn_accent.carousel-slider-item__btn Подробнее
+            img(src="assets/images/arrow-right.png", alt="arrow-right")      
+  .stat
+    .stat-wrap
+      .stat-item
+        p.stat-item__big 10+
+        p.stat-item__small гостей прошли курсы<br>Санаторно-Курортных<br>программ
+      .stat-item
+        p.stat-item__big 50+
+        p.stat-item__small гостей прошли<br>курсы программ<br>Реабилитации
+      .stat-item
+        p.stat-item__big 90%
+        p.stat-item__small гостей<br>возвращаются<br>к нам
+  
+  .textBlock.textBlock_rtl.textBlock_reab
+    .textBlock-wrap
+      .textBlock-images
+        img(src="assets/images/skc-1.png", alt="").textBlock-images__img
+        img(src="assets/images/skc-2.png", alt="").textBlock-images__img
+        p.textBlock-images__text Лечение
+      .textBlock-desc
+        h2.textBlock-desc__title Центр<br>здоровья
+        p.textBlock-desc__text Центр Здоровья в Крыму «Эволюция» является уникальной здравницей, где каждый может улучшить здоровье и повысить качество жизни. «Эволюция» специализируется на лечении заболеваний органов дыхания, опорно-двигательного аппарата и периферической нервной системы. Все программы подходят для взрослых и детей от 4 лет. Впечатляющие ресурсы центра, в том числе  собственный песчаный пляж длиной 1 км и целебный воздух западного побережья способствует повышению иммунитета и улучшению общего состояния здоровья. Медицинская база нашего центра позволяет принимать большое количество гостей, приезжающих с целью оздоровления и отдыха.
+  .video
+    .video-wrap
+      p.defaultTitle.video__title Видео
+      p.defaultSubtitle.video__subtitle Краткое описание
+      <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  .supa
+    .supa-wrap
+      p.defaultTitle.supa__title Проживание
+      p.defaultSubtitle.supa__subtitle С кратким описанием
+      .supaSlider.owl-carousel
+        .supaSlider-item
+          .supaSlider-insideSliderBlock
+            .supaSlider-insideSliderBlock__prev
+              img(src="assets/images/arrow-supaSlider.png", style="transform: rotate(180deg);" alt="")
+            .supaSlider-insideSliderBlock-num
+              .supaSlider-insideSliderBlock-num__current 01
+              .supaSlider-insideSliderBlock-num__all 04
+            .supaSlider-insideSliderBlock__next
+              img(src="assets/images/arrow-supaSlider.png", alt="")
+          .supaSlider-insideSlider
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+          .supaSlider-item-desc
+            .supaSlider-item-desc-top
+              p.supaSlider-item-desc-top__title Корпус<br>Реабилитационный
+              .supaSlider-item-desc-top-right
+                .supaSlider-item-desc-top-right__icon
+                  img(src="assets/images/wave_gray.png", alt="")
+                p.supaSlider-item-desc-top-right__text 200 м. до моря
+            .supaSlider-item-desc-main
+              p.supaSlider-item-desc-main__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas vel. 
+              .supaSlider-item-desc-main__price Цена за сутки:&nbsp;
+                span 2 500 РУБ.
+            .supaSlider-item-desc__placeholder Проживание
+        .supaSlider-item
+          .supaSlider-insideSliderBlock
+            .supaSlider-insideSliderBlock__prev
+              img(src="assets/images/arrow-supaSlider.png", style="transform: rotate(180deg);" alt="")
+            .supaSlider-insideSliderBlock-num
+              .supaSlider-insideSliderBlock-num__current 01
+              .supaSlider-insideSliderBlock-num__all 04
+            .supaSlider-insideSliderBlock__next
+              img(src="assets/images/arrow-supaSlider.png", alt="")
+          .supaSlider-insideSlider
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+            .supaSlider-insideSlider__item
+              img(data-lazy="assets/images/room-slider.png", alt="")
+          .supaSlider-item-desc
+            .supaSlider-item-desc-top
+              p.supaSlider-item-desc-top__title Корпус<br>Реабилитационный
+              .supaSlider-item-desc-top-right
+                .supaSlider-item-desc-top-right__icon
+                  img(src="assets/images/wave_gray.png", alt="")
+                p.supaSlider-item-desc-top-right__text 200 м. до моря
+            .supaSlider-item-desc-main
+              p.supaSlider-item-desc-main__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas vel. 
+              .supaSlider-item-desc-main__price Цена за сутки:&nbsp;
+                span 2 500 РУБ.
+            .supaSlider-item-desc__placeholder Проживание
+  .advantages.advantages_5.advantages_gray
+    .advantages-wrap
+      h3.advantages__title Преимущества
+      .advantages-row
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/4adv/dirt.png", alt="")
+          p.advantages-row-item__title Грязелечение
+          p.advantages-row-item__text Знаменитые<br>лечебные грязи<br>озера Саки
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/4adv/fizio.png", alt="")
+          p.advantages-row-item__title Физиолечение
+          p.advantages-row-item__text Оборудование<br>соответствует<br>стандфартами<br>безопасности
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/4adv/baln.png", alt="")
+          p.advantages-row-item__title Бальнеология
+          p.advantages-row-item__text Лечебные<br>ванны с травами<br>и маслами
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/4adv/massage.png", alt="")
+          p.advantages-row-item__title Массаж
+          p.advantages-row-item__text Массажисты<br>с многолетним<br>опытом работы
+        .advantages-row-item
+          .advantages-row-item__img
+            img(src="assets/images/4adv/klimat.png", alt="")
+          p.advantages-row-item__title Климат 
+          p.advantages-row-item__text Лечебная<br>климатическая<br>зона 
+  .sea
+    .sea__wrapper
+      img(src="assets/images/child_camp/sea/sea-bg.png", alt="").sea__wrapper-bg
+      p.sea-title ДЛЯ ТЕХ, КТО ЦЕНИТ<br>ЧИСТЫЙ ПЛЯЖ
+      .sea-items
+        .sea-item
+          .sea-item-text Собственный песчаный пляж длиной 1000 м на берегу Черного моря прекрасно подходит для спокойного  и комфортного отдыха. На пляже есть шезлонги, пляжные зонты, солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты. 
+          img(src="assets/images/child_camp/sea/sea-sea1.jpg" alt="Море и Зонтики").sea-item-img
+        .sea-item
+          .sea-item-text Собственный песчаный пляж длиной 1000 м на берегу Черного моря прекрасно подходит для спокойного  и комфортного отдыха. На пляже есть шезлонги, пляжные зонты, солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты. 
+          img(src="assets/images/child_camp/sea/sea-sea2.jpg" alt="Море и Зонтики").sea-item-img
+          .sea-box
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-wifi.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Wi-Fi
+                p.sea-box-text Бесплатный Wi-Fi на<br>всей территории пляжа
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-shower.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Душ
+                p.sea-box-text Душевые кабинки<br>на всей территории
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-cab.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Кабинки
+                p.sea-box-text Имеются кабинки<br>для переодевания
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-toilet.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Биотуалет
+                p.sea-box-text На пляже<br>есть биотуалеты
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-umbrella.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Шезлонги
+                p.sea-box-text Шезлонги на<br>всей территории пляжа
+            .sea-box-item
+              img(src="assets/images/child_camp/sea/sea-toys-land.png" alt="").sea-box-item-img
+              .sea-box-title-inner
+                p.sea-box-title Площадки
+                p.sea-box-text Имеется<br>детская площадка
+  
