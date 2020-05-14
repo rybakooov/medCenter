@@ -165,4 +165,40 @@ $(document).ready(function () {
     var first = elements[0]; // выбираем конкретно первый элемент (0) из массива
     first.classList.add("left-edge");
   }); // добавляем к нему класс
+
+
+  $(document).on('click', '.tarifes-row-item:not(.tarifes-row-item_disabled)', function(){
+    $(this).toggleClass('tarifes-row-item_active');
+  })
+
+
+
+
+  $(document).on('click', '.tarifes-list-item-row__minus', function(){
+    var num = +$(this).next('.tarifes-list-item-row__item').html();
+    if(num == 1){
+      return false
+    }
+    num--;
+    $(this).next('.tarifes-list-item-row__item').html(num.toString());
+  });
+  
+  $(document).on('click', '.tarifes-list-item-row__plus', function(){
+    var num = +$(this).prev('.tarifes-list-item-row__item').html();
+    if(num == 20){
+      return false
+    }
+    num++;
+    $(this).prev('.tarifes-list-item-row__item').html(num.toString());
+  });
+
+
+  if($('.map').length){
+    $('.map-main-baloon').each(function(){
+      $(this).css('top', $(this).data('top') + '%');
+      $(this).css('left', $(this).data('left') + '%');
+      $(this).css('bottom', 'auto');
+      $(this).css('right', 'auto');
+    })
+  }
 });

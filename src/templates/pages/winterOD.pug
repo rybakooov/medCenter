@@ -1,0 +1,483 @@
+extends ../template
+block title
+  | 5.5 Дневной лагерь на зимних каникулах
+block content
+  .winter.OD
+    .bannerWrap.banner_children-wrap.banner_children-wrap_cur
+      .banner.banner_children-camp
+        img(src="assets/images/child_camp/child_bg-grey.jpg" alt="Задний фон").banner_children-camp-bg
+        .banner-desc
+          p.banner-desc__suptitle Дневной лагерь
+          h1.banner-desc__title Зимние<br>
+            span каникулы
+          p.banner-desc__text Крым, первая береговая линия
+          p.banner-desc__years 8-14 лет
+          p.banner-desc__when С 2 по 8 января, 7 дней
+        .banner-weather
+          .banner-weather-box
+            img(src="assets/images/child_camp/child_sun.png" alt="").banner-weather-box
+            p.banner-weather-degrees +27
+          .banner-weather-items
+            ul.banner-weather-item
+              li.banner-weather-line Ветер
+                span 3м/с
+              li.banner-weather-line Влажность
+                span 85%
+              li.banner-weather-line Давление
+                span 755 
+            a.banner-weather-link(href="#") Погода на ближайшие дни
+        a(href="#").banner-item-img-small.banner-item-img-small_yellow
+          .banner-item-content
+            p.banner-item-img-small__proc 15%
+            p.banner-item-img-small__sale Скидка
+            p.banner-item-img-small__more Подробнее
+        .banner-item-img-lg
+          img(src="assets/images/child_camp/winter-md-banner.png" alt="Дети идут").banner-item-img__img.banner-item-img-lg-img
+        .banner-item-img-md
+          img(src="assets/images/child_camp/winter-sm-banner.png" alt="Дети и листья").banner-item-img__img.banner-item-img-lg-md
+        .banner-item-img-mega
+          img(src="assets/images/child_camp/winterbanner-lg.png" alt="").banner-item-img__img.banner-item-img-lg-mega
+    .stat.stat_with
+      .stat-wrap.children-stat
+        .stat-item
+          p.stat-item__big 10+
+          p.stat-item__small и более детей были<br>в детском лагере<br>«Эволюция»гостей 
+        .stat-item
+          p.stat-item__big 100
+          p.stat-item__small и более игр,<br>квестов,<br>дискотеки 
+        .stat-item
+          p.stat-item__big 90%
+          p.stat-item__small детей<br> возвращаются<br>к нам 
+        .stat-links
+          a(href="#").btn.stat-links__link Другие смены
+          a(href="#").btn.stat-links__link Программа
+    .textBlock.textBlock_rtl.textBlock_reab.children-camp-about.textBlock_lager
+      .textBlock-wrap
+        .textBlock-images
+          .textBlock-images-img
+            img(src="assets/images/child_camp/winter-camp-1.png", alt="").textBlock-images__img
+          .textBlock-images-img
+            img(src="assets/images/child_camp/winter-camp-2.png", alt="").textBlock-images__img
+        .textBlock-desc
+          h2.textBlock-desc__title Зимние<br>каникулы
+          p.textBlock-desc__text Программа зимних каникул ориентирована на формирование здорового образа жизни и оздоровления детей и подростков. Детский лагерь «Эволюция» – это место, где дети могут проявить свои способности, найти друзей, отлично отдохнуть, а также приобрести новые знания, умения в спорте и творчестве, обрести титулы начинающих спортсменов.  
+    .tarifes
+      .tarifes-wrap
+        p.defaultTitle.tarifes__title Тарифы
+        .tarifes-row
+          .tarifes-row-item
+            p.tarifes-row-item__title Приведи друга
+            .tarifes-row-item-check
+              .tarifes-row-item-check__slide -5%
+          .tarifes-row-item.tarifes-row-item_active
+            p.tarifes-row-item__title Раннее бронирование
+            .tarifes-row-item-check
+              .tarifes-row-item-check__slide -10%
+          .tarifes-row-item.tarifes-row-item_disabled
+            p.tarifes-row-item__title Последняя путевка
+            .tarifes-row-item-check
+              .tarifes-row-item-check__slide -5%
+        .tarifes-list
+          .tarifes-list-item
+            .tarifes-list-item__head 
+              p Зимний<br>
+                span дневной лагерь
+            .tarifes-list-item-body
+              p.tarifes-list-item__when 28.12-08.01
+              ul.tarifes-list-item-ul
+                li.tarifes-list-item-ul__li Посещение бассеина
+                li.tarifes-list-item-ul__li Четырехразовое питание
+                li.tarifes-list-item-ul__li Мастер-классы с представителями профессий
+                li.tarifes-list-item-ul__li Творческие занятия
+                li.tarifes-list-item-ul__li Игры и квесты на свежем воздухе
+                li.tarifes-list-item-ul__li Экскурсия в пожарную часть и телевидение
+              .tarifes-list-item-row
+                p.tarifes-list-item-row__title Количество детей
+                .tarifes-list-item-row__minus -
+                p.tarifes-list-item-row__item 1
+                .tarifes-list-item-row__plus +
+              .tarifes-list-item-row
+                p.tarifes-list-item-row__title Количество дней
+                .tarifes-list-item-row__minus -
+                p.tarifes-list-item-row__item 1
+                .tarifes-list-item-row__plus +
+              .tarifes-list-item-row
+                a(href="#").btn.btn_darkblue.tarifes-list-item__btn Забронировать
+                .tarifes-list-item-prices
+                  p.tarifes-list-item-prices__new 18 000&nbsp;
+                    span руб
+    .more
+      .more-wrap
+        p.defaultTitle.more__title Необходимые документы для размещения 
+        p.more__text  
+          | 1. <strong>Оригинал свидетельства о рождении/паспорт</strong><br>
+          | 2. <strong>Справки от педиатра:</strong><br>
+          |     — Справка об эпидокружении (выдается эпидемиологом в поликлинике или в местной СЭС)<br>
+          |     — Формы медицинская справка по форме №079/у (заполняется участковым врачом)<br>
+          |     — Справка для посещения бассейна<br>
+          | 3. <strong>Копия полиса обязательного медицинского страхования</strong><br>
+          | 4. <strong>Согласие/отказ на оказание мед.помощи</strong><br>
+          | 5. <strong>Документы для ФМС (для граждан без прописки в РФ)</strong><br>
+          | 6. <strong>Согласие на обработку персональных данных</strong><br>
+          | 7. <strong>Памятка для гостей центра</strong>
+    .advantages.advantages_4.advantages_full
+      .advantages-wrap 
+        p.defaultTitle.advantages__title Что взять с собой
+        .advantages-row
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/pool.png" alt="")
+            p.advantages-row-item__title Для посещения<br>бассеина
+            a(href="#").advantages-row-item__more Подробнее
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/clothes.png" alt="")
+            p.advantages-row-item__title Одежда и обувь
+            a(href="#").advantages-row-item__more Подробнее
+    .advantages.advantages_4.advantages_full
+      .advantages-wrap 
+        p.defaultTitle.advantages__title Что ждет ваших детей 
+        .advantages-row
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/docs/deti-1.png" alt="")
+            p.advantages-row-item__title Cпорт и игры
+            p.advantages-row-item__text Развитие навыков<br>и личных качеств
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/docs/deti-2.png" alt="")
+            p.advantages-row-item__title Творчество
+            p.advantages-row-item__text Каждый день творчество<br>и мастер-классы
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/docs/deti-3.png" alt="")
+            p.advantages-row-item__title Навыки
+            p.advantages-row-item__text Развитие навыков<br>и личных качеств
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/docs/deti-4.png" alt="")
+            p.advantages-row-item__title Климат
+            p.advantages-row-item__text Оздоровление<br>климатом и морем
+    .call.call_dark
+      .call__wrap
+        .call-title разрешите менеджеру вам помочь?
+        .call-text Введите свой номер телефона, и мы перезвоним Вам в течение 10 минут. Или выберете удобное время
+        form.children-form
+          input(type="number" placeholder="+7").children-form-input
+          select.children-form-select
+            option(value="") Прямо сейчас
+            option(value="") Прямо сейчас
+            option(value="") Прямо сейчас
+          button(type="submit").children-form-btn Жду звонка
+        .call-text-down Нажимая на кнопку «Жду звонка», Вы принимаете условия
+        a.call-text-down-link(href="#") Пользовательского соглашения
+    .advantages.children__adv
+      .advantages-wrap
+        h3.advantages__title Преимущества     
+        .advantages-row
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/adv/adv-date.png" alt="")
+            p.advantages-row-item__title Режим</br> работы
+            p.advantages-row-item__text Центр</br>работает</br>365 дней в году 
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/adv/adv-sport.png" alt="")
+            p.advantages-row-item__title Спортивная</br>инфраструктура
+            p.advantages-row-item__text 17 спортивных</br>сооружений</br>на территории 
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/adv/adv-animantion.png" alt="")
+            p.advantages-row-item__title Профессиональные</br>аниматоры
+            p.advantages-row-item__text Команда</br>аниматоров,</br>любящих свое дело 
+          .advantages-row-item 
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/adv/adv-climat.png" alt="")
+            p.advantages-row-item__title Лучшая</br>локация
+            p.advantages-row-item__text Приморско-степной</br>климат в Крыму</br>признан лечебным
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/adv/adv-land.png" alt="")
+            p.advantages-row-item__title Доступная</br>инфраструктура
+            p.advantages-row-item__text 64 га</br>доступной</br>территории
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/adv/adv-sea.png" alt="")
+            p.advantages-row-item__title Собственный</br>пляж
+            p.advantages-row-item__text Пологий</br>вход в море</br>и песок
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/adv/adv-food.png" alt="")
+            p.advantages-row-item__title 5-ти разовое</br>питание
+            p.advantages-row-item__text В корпусе проживания</br>в соответствии с</br>нормами СанПиН
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/child_camp/adv/adv-save.png" alt="")
+            p.advantages-row-item__title Безопасносная</br>территория
+            p.advantages-row-item__text Ограничение</br>движения транспорта</br>на территории
+    .video
+      .video-wrap
+        p.defaultTitle.video__title Видео
+        p.defaultSubtitle.video__subtitle Краткое описание
+        <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
+    .map
+      .map-wrap
+        p.defaultTitle.map__title Откуда к нам едут
+        .map-main
+          img(src="assets/images/child_camp/map.png", alt="").map-main__img
+          .map-main-baloon(data-top="14.5" data-left="73.5")
+            .map-main-baloon__dot
+            .map-main-baloon-main
+              p.map-main-baloon-main__title Заголовок
+              p.map-main-baloon-main__text Lorem ipsum dolor sit amet consectetur adipisicing
+        form.map-form
+          p.map-form__title А вы с какого города?
+          .map-form-row
+            .map-form-input
+              input(type="text" placeholder="Выбрать город")
+          p.map-form__title Оставьте след на карте, приезжай к нам в лагерь 
+          .map-form-row
+            .map-form-input
+              input(type="text" placeholder="Введите номер телефона")
+            .map-form-input
+              input(type="text" placeholder="Введите почту")
+            .map-form-input.map-form-input_btn
+              button(type="submit").btn Поеду к вам
+      .map-wrap
+        p.defaultTitle.map__title Как будем встречать Новый год
+        .newYear-row
+          .newYear-row-item
+            .newYear-row-item-content
+              p.newYear-row-item__day День
+              p.newYear-row-item__circle 1
+              p.newYear-row-item__what Новогодняя<br>зарядка
+            p.newYear-row-item__placeholder
+              span 8:00-9:00&nbsp;
+              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
+          .newYear-row-item
+            .newYear-row-item-content
+              p.newYear-row-item__day День
+              p.newYear-row-item__circle 2
+              p.newYear-row-item__what Игра<br>"Тайный друг"
+            p.newYear-row-item__placeholder
+              span 8:00-9:00&nbsp;
+              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
+          .newYear-row-item
+            .newYear-row-item-content
+              p.newYear-row-item__day День
+              p.newYear-row-item__circle 3
+              p.newYear-row-item__what Конкурс<br>газет
+            p.newYear-row-item__placeholder
+              span 8:00-9:00&nbsp;
+              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
+          .newYear-row-item
+            .newYear-row-item-content
+              p.newYear-row-item__day День
+              p.newYear-row-item__circle 4
+              p.newYear-row-item__what Час<br>отдыха
+            p.newYear-row-item__placeholder
+              span 8:00-9:00&nbsp;
+              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
+          .newYear-row-item
+            .newYear-row-item-content
+              p.newYear-row-item__day День
+              p.newYear-row-item__circle 5
+              p.newYear-row-item__what Новогодний<br>квест
+            p.newYear-row-item__placeholder
+              span 8:00-9:00&nbsp;
+              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
+          .newYear-row-item
+            .newYear-row-item-content
+              p.newYear-row-item__day День
+              p.newYear-row-item__circle 6
+              p.newYear-row-item__what Подготовка<br>к празднику
+            p.newYear-row-item__placeholder
+              span 8:00-9:00&nbsp;
+              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
+          .newYear-row-item
+            .newYear-row-item-content
+              p.newYear-row-item__day День
+              p.newYear-row-item__circle 7
+              p.newYear-row-item__what Праздничный<br>ужин
+            p.newYear-row-item__placeholder
+              span 8:00-9:00&nbsp;
+              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
+          .newYear-row-item
+            .newYear-row-item-content
+              p.newYear-row-item__day День
+              p.newYear-row-item__circle 8
+              p.newYear-row-item__what Концерт —<br>поздравление
+            p.newYear-row-item__placeholder
+              span 8:00-9:00&nbsp;
+              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
+          .newYear-row-item
+            .newYear-row-item-content
+              p.newYear-row-item__day День
+              p.newYear-row-item__circle 9
+              p.newYear-row-item__what Ярмарка<br>веселых затей
+            p.newYear-row-item__placeholder
+              span 8:00-9:00&nbsp;
+              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
+          .newYear-row-item
+            .newYear-row-item-content
+              p.newYear-row-item__day День
+              p.newYear-row-item__circle 10
+              p.newYear-row-item__what Встреча<br>Нового года
+            p.newYear-row-item__placeholder
+              span 8:00-9:00&nbsp;
+              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
+    .sea
+      .sea__wrapper
+        img(src="assets/images/child_camp/sea/sea-bg.png", alt="").sea__wrapper-bg
+        p.sea-title ДЛЯ ТЕХ, КТО ЦЕНИТ<br>ЧИСТЫЙ ПЛЯЖ
+        .sea-items
+          .sea-item
+            .sea-item-text Собственный песчаный пляж длиной 1000 м на берегу Черного моря прекрасно подходит для спокойного  и комфортного отдыха. На пляже есть шезлонги, пляжные зонты, солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты. 
+            img(src="assets/images/child_camp/sea/sea-sea1.jpg" alt="Море и Зонтики").sea-item-img
+          .sea-item
+            .sea-item-text Собственный песчаный пляж длиной 1000 м на берегу Черного моря прекрасно подходит для спокойного  и комфортного отдыха. На пляже есть шезлонги, пляжные зонты, солнцезащитные навесы, раздевалки, спортивная площадка, туалетные и душевые комнаты. 
+            img(src="assets/images/child_camp/sea/sea-sea2.jpg" alt="Море и Зонтики").sea-item-img
+            .sea-box
+              .sea-box-item
+                img(src="assets/images/child_camp/sea/sea-wifi.png" alt="").sea-box-item-img
+                .sea-box-title-inner
+                  p.sea-box-title Wi-Fi
+                  p.sea-box-text Бесплатный Wi-Fi на<br>всей территории пляжа
+              .sea-box-item
+                img(src="assets/images/child_camp/sea/sea-shower.png" alt="").sea-box-item-img
+                .sea-box-title-inner
+                  p.sea-box-title Душ
+                  p.sea-box-text Душевые кабинки<br>на всей территории
+              .sea-box-item
+                img(src="assets/images/child_camp/sea/sea-cab.png" alt="").sea-box-item-img
+                .sea-box-title-inner
+                  p.sea-box-title Кабинки
+                  p.sea-box-text Имеются кабинки<br>для переодевания
+              .sea-box-item
+                img(src="assets/images/child_camp/sea/sea-toilet.png" alt="").sea-box-item-img
+                .sea-box-title-inner
+                  p.sea-box-title Биотуалет
+                  p.sea-box-text На пляже<br>есть биотуалеты
+              .sea-box-item
+                img(src="assets/images/child_camp/sea/sea-umbrella.png" alt="").sea-box-item-img
+                .sea-box-title-inner
+                  p.sea-box-title Шезлонги
+                  p.sea-box-text Шезлонги на<br>всей территории пляжа
+              .sea-box-item
+                img(src="assets/images/child_camp/sea/sea-toys-land.png" alt="").sea-box-item-img
+                .sea-box-title-inner
+                  p.sea-box-title Площадки
+                  p.sea-box-text Имеется<br>детская площадка
+    .swim
+      .swim__wrapper
+        img(src="assets/images/child_camp/swim/swim-bg.png", alt="").swim__wrapper-bg
+        .swim__box
+          img(src="assets/images/child_camp/swim/swim-img.png", alt="").swim__box-img
+          .swim__title-wrapper
+            p.swim__title Научись плавать<br>быстрее, дольше и легче
+            p.swim__text Улучшить навыки по плаванию или научиться с нуля вы можете в бассейнах «Эволюции» олимпийского класса, которые работают круглый год. Температура, глубина и безопасность соответствуют международным нормам.
+    .active
+      .active__wrapper
+        img(src="assets/images/child_camp/active/active-bg.png", alt="").active__wrapper-bg
+        .swim__box
+        .active__box
+          .active__item
+            p.active__item-title ЛЮБИТЕЛЯМ<br>АКТИВНОГО ОТДЫХА
+            img(src="assets/images/child_camp/active/active-img1.jpg", alt="").active__item-img
+          .active__item
+            .active__item-text
+              span Активный отдых&nbsp; 
+              | в 17 спортсооружениях центра подарит вам новую энергию и хорошее самочувствие.            
+            img(src="assets/images/child_camp/active/active-img2.jpg", alt="").active__item-img
+    .carousel.children__carousel
+      .carousel-wrap
+        h2.defaultTitle.carousel__title У нас не только зимняя смена
+        .carousel__title
+        .carousel-slider
+          a.carousel-slider-item(style="background-image: url('assets/images/child_camp/slider/children-slider-half-spring.png');" href="#")         
+            .carousel-slider-item__title Весенний<br>лагерь   
+            .btn.btn_accent.carousel-slider-item__btn Подробнее
+              img(src="assets/images/arrow-right.png" alt="arrow-right")
+          a.carousel-slider-item(style="background-image: url('assets/images/child_camp/slider/children-slider-half-summer.png');" href="#")          
+            .carousel-slider-item__title Летний<br>лагерь       
+            .btn.btn_accent.carousel-slider-item__btn Подробнее
+              img(src="assets/images/arrow-right.png" alt="arrow-right")
+          a.carousel-slider-item(style="background-image: url('assets/images/child_camp/slider/children-slider-half-summer.png');" href="#")
+            .carousel-slider-item__title Осений<br>лагерь      
+            .btn.btn_accent.carousel-slider-item__btn Подробнее
+              img(src="assets/images/arrow-right.png" alt="arrow-right")    
+          a.carousel-slider-item(style="background-image: url('assets/images/child_camp/slider/children-slider-half-winter.png');" href="#")
+            .carousel-slider-item__title Зимний<br>лагерь   
+            .btn.btn_accent.carousel-slider-item__btn Подробнее
+              img(src="assets/images/arrow-right.png" alt="arrow-right")
+    .children-supa
+      .supa-wrap
+        p.defaultTitle.supa__title Также для комфортного отдыха
+        .supaSlider-insideSlider-wrap.supaSlider-item
+          p.children-supa__placeholder Трансфер
+          <div class="supaSlider-insideSliderBlock">
+            <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);" src="assets/images/arrowSlider.png"></div>
+            <div class="supaSlider-insideSliderBlock__next"><img src="assets/images/arrowSlider.png"></div>
+          </div>
+          .supaSlider-insideSlider
+            .supaSlider-insideSlider__item
+              p.children-supa__text Трансфер
+              a(href="#").btn.btn_accent.children-supa__btn Подробнее
+                img(src="assets/images/arrow-right.png" alt="arrow-right")
+              img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", style="width" alt="")
+            .supaSlider-insideSlider__item
+              p.children-supa__text Трансфер
+              a(href="#").btn.btn_accent.children-supa__btn Подробнее
+                img(src="assets/images/arrow-right.png" alt="arrow-right")
+              img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
+            .supaSlider-insideSlider__item
+              p.children-supa__text Трансфер
+              a(href="#").btn.btn_accent.children-supa__btn Подробнее
+                img(src="assets/images/arrow-right.png" alt="arrow-right")
+              img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
+            .supaSlider-insideSlider__item
+              p.children-supa__text Трансфер
+              a(href="#").btn.btn_accent.children-supa__btn Подробнее
+                img(src="assets/images/arrow-right.png" alt="arrow-right")
+              img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
+            .supaSlider-insideSlider__item
+              p.children-supa__text Трансфер
+              a(href="#").btn.btn_accent.children-supa__btn Подробнее
+                img(src="assets/images/arrow-right.png" alt="arrow-right")
+              img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
+            .supaSlider-insideSlider__item
+              p.children-supa__text Трансфер
+              a(href="#").btn.btn_accent.children-supa__btn Подробнее
+                img(src="assets/images/arrow-right.png" alt="arrow-right")
+              img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
+    .gallery.gallery_children
+      .gallery-wrap
+        .gallery-left
+          .gallery-left-desc
+            p.gallery-left-desc__title Фотогалерея
+            p.gallery-left-desc__text Детский лагерь
+          .gallery-left-grid
+            .gallery-left-grid-img
+              img(src="assets/images/child_camp/gallery/chld-gallery-img1.png", alt="")
+            .gallery-left-grid-img
+              img(src="assets/images/child_camp/gallery/chld-gallery-img5.png", alt="")
+            .gallery-left-grid-img
+              img(src="assets/images/child_camp/gallery/chld-gallery-img6.png", alt="")
+            .gallery-left-grid-img
+              img(src="assets/images/child_camp/gallery/chld-gallery-img7.png", alt="")
+            .gallery-left-grid-img
+              img(src="assets/images/child_camp/gallery/chld-gallery-img8.png", alt="")
+        .gallery-right
+          .gallery-right-img  
+            img(src="assets/images/child_camp/gallery/chld-gallery-img10.png", alt="")
+          .gallery-right-img  
+            img(src="assets/images/child_camp/gallery/chld-gallery-img4.png", alt="")
+          .gallery-right-img  
+            img(src="assets/images/child_camp/gallery/chld-gallery-img2.png", alt="")
+          .gallery-right-img  
+            img(src="assets/images/child_camp/gallery/chld-gallery-img3.png", alt="")
+          .gallery-right-img  
+            img(src="assets/images/child_camp/gallery/chld-gallery-img9.png", alt="")
+    
+
+
