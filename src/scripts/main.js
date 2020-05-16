@@ -61,6 +61,15 @@ $(document).ready(function () {
     });
   }
 
+  if($('.SL6-SLIDER').length){
+
+    $('.SL6-SLIDER').owlCarousel({
+      items: 1,
+      nav: true,
+      center:true,
+      loop:true,
+    })
+  }
 
   if ($(".supaSlider-insideSlider").length) {
     $(".supaSlider-insideSlider").on("init", function (event, slick, currentSlide) {
@@ -96,8 +105,12 @@ $(document).ready(function () {
       slick.$prev = prev;
       slick.$next = next;
       cur.removeClass("slick-next").removeClass("slick-sprev");
+      
+      if($(event.target).hasClass('supaSlider-insideSlider_chainHead')){
+        $('.supaSlider-insideSlider_chain').slick('slickGoTo', nextSlide);
+      }
     })
-    .on('afterChange', function(event, slick, currentSlide, nextSlide){
+    .on('afterChange', function(event, slick, currentSlide){
       event.stopPropagation();
       var curPlus = currentSlide + 1;
       var allSlides = $(event.target).find('.supaSlider-insideSlider__item:not(.slick-cloned)').length;
@@ -107,6 +120,8 @@ $(document).ready(function () {
         var str = curPlus.toString();
       }
       $(event.target).closest('.supaSlider-item').find('.supaSlider-insideSliderBlock-num__current').html(str);
+      
+      
     });
     
     
@@ -121,24 +136,31 @@ $(document).ready(function () {
       infinite: false,
       selectOnFocus: false,
     })*/
-    $(".supaSlider-insideSlider").slick({
-      speed: 1000,
-      arrows: false,
-      dots: false,
-      lazyLoad: 'ondemand',
-      //prevArrow: $('.supaSlider-insideSliderBlock__prev'),
-      //nextArrow: $('.supaSlider-insideSliderBlock__next'),
-      infinite: true,
-      centerMode: true,
-      slidesPerRow: 1,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      centerPadding: '0',
-      /*swipe: true,*/
-      customPaging: function(slider, i) {
-        return '';
-      },
-    });
+    $(".supaSlider-insideSlider").each(function(){
+
+      $(this).slick({
+        speed: 1000,
+        arrows: false,
+        dots: false,
+        lazyLoad: 'ondemand',
+        //prevArrow: $('.supaSlider-insideSliderBlock__prev'),
+        //nextArrow: $('.supaSlider-insideSliderBlock__next'),
+        infinite: true,
+        centerMode: true,
+        /*slidesPerRow: 1,*/
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '0',
+        /*swipe: true,*/
+        draggable: false,
+        /*asNavFor: $(this).closest('.supaFitnes').length ? $(this).closest('.supaFitnes').find('.supaSlider-insideSlider_chain') : null,*/
+        customPaging: function(slider, i) {
+          return '';
+        },
+      });
+    })
+
+
 
     $(document).on('click', '.supaSlider-insideSliderBlock__next', function(){
       $(this).closest('.supaSlider-item').find('.supaSlider-insideSlider').slick('slickNext');
@@ -152,19 +174,23 @@ $(document).ready(function () {
       nav : true,
       pagination : false
     });
+
   }
 
-  var elements = document.querySelectorAll(".slick-active"); // выбираем все элементы с нужным классом
-  var first = elements[0]; // выбираем конкретно первый элемент (0) из массива
-  first.classList.add("left-edge");
-  $(".carousel-slider").on("afterChange", function (event,slick,currentSlide,nextSlide) {
-    if ($(".left-edge").length) {
-      $(".left-edge").removeClass("left-edge");
-    }
-    var elements = event.target.querySelectorAll(".slick-active"); // выбираем все элементы с нужным классом
+  if($(".slick-active").length){
+    var elements = document.querySelectorAll(".slick-active"); // выбираем все элементы с нужным классом
     var first = elements[0]; // выбираем конкретно первый элемент (0) из массива
     first.classList.add("left-edge");
-  }); // добавляем к нему класс
+    $(".carousel-slider").on("afterChange", function (event,slick,currentSlide,nextSlide) {
+      if ($(".left-edge").length) {
+        $(".left-edge").removeClass("left-edge");
+      }
+      var elements = event.target.querySelectorAll(".slick-active"); // выбираем все элементы с нужным классом
+      var first = elements[0]; // выбираем конкретно первый элемент (0) из массива
+      first.classList.add("left-edge");
+    }); // добавляем к нему класс
+
+  }
 
 
   $(document).on('click', '.tarifes-row-item:not(.tarifes-row-item_disabled)', function(){
@@ -201,4 +227,60 @@ $(document).ready(function () {
       $(this).css('right', 'auto');
     })
   }
+
+  if($('.group-slider').length){
+    $('.group-slider').owlCarousel({
+      items: 1,
+      nav : true,
+      pagination : false,
+      mouseDrag: false
+    })
+
+    $('.group-slider-item-galery-slider1').each(function(){
+      $(this).slick({
+        slidesToShow: 1,
+        arrows: false,
+        asNavFor: $(this).closest('.group-slider-item').find('.group-slider-item-galery-slider2'),
+      })
+    })
+    $('.group-slider-item-galery-slider2').each(function(){
+      $(this).slick({
+        slidesToShow: 3,
+        arrows: false,
+        focusOnSelect: true,
+        asNavFor: $(this).closest('.group-slider-item').find('.group-slider-item-galery-slider1'),
+      })
+    })
+  }
+
+
+
+  $(document).on('click', '.shedule-tabs__tab:not(.active)', function(e){
+    e.preventDefault();
+    var curTab = $(this).attr('href');
+    curTab = curTab.slice(1);
+    var html = $(this).html();
+
+    $('.shedule-tabs__tab.active').removeClass('active');
+    $('.shedule-main-item.active').removeClass('active');
+
+    $(this).addClass('active');
+    $('.shedule-main-item#' + curTab).addClass('active');
+    
+    $(this).closest('.shedule-wrap').find('.shedule__placeholder').html(html);
+  })
+
+
+  $(document).on('click', '.shedule-arr__next', function(){
+    if($(this).closest('.shedule').find('.shedule-tabs__tab.active').next().length){
+      $(this).closest('.shedule').find('.shedule-tabs__tab.active').next().click();
+    }
+  })
+  $(document).on('click', '.shedule-arr__prev', function(){
+    if($(this).closest('.shedule').find('.shedule-tabs__tab.active').prev().length){
+      $(this).closest('.shedule').find('.shedule-tabs__tab.active').prev().click();
+    }
+  })
+
+
 });

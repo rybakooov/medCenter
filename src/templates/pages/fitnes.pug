@@ -1,0 +1,129 @@
+extends ../template
+block title
+  | 6. Фитнес клуб
+block content
+  .fitnes-club.red.fitnes
+    .bannerWrap
+      .bannerBgWrap
+        img(src="assets/images/fitnesBg.png", alt="Центр здоровья").bannerBg
+      .banner.banner_onIndex
+        .banner-desc
+          h1.banner-desc__title Фитнес<br>
+            span КЛУБ
+          p.banner-desc__hidetext Lorem ipsum dolor sit amet, consectetur
+          .select
+            select
+              option(value="none" hidden) Выбрать вид спорта
+              option Баскетбол
+              option Футбол
+    .children-supa.supaCard
+      .supa-wrap
+        p.defaultTitle.supaCard__title Абонементы
+        p.defaultSubtitle.supaCard__subtitle Краткое описание
+        .supaSlider-insideSlider-wrap.supaSlider-item
+          <div class="supaSlider-insideSliderBlock">
+            <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);" src="assets/images/arrowSlider.png"></div>
+            <div class="supaSlider-insideSliderBlock__next"><img src="assets/images/arrowSlider.png"></div>
+          </div>
+          .supaSlider-insideSlider
+            .supaSlider-insideSlider__item
+              .supaSlider-insideSlider__item-content(style="background-image: url(assets/images/card.png);")
+                p.children-supa__suptitle Абонемент
+                p.children-supa__title Карта Gold Pass 
+                p.children-supa__text 360 дней
+                a(href="#").btn.btn_accent.children-supa__btn Подробнее
+                  img(src="assets/images/arrow-right.png" alt="arrow-right")
+            .supaSlider-insideSlider__item
+              .supaSlider-insideSlider__item-content(style="background-image: url(assets/images/card.png);")
+                p.children-supa__suptitle Абонемент
+                p.children-supa__title Карта Gold Pass 
+                p.children-supa__text 360 дней
+                a(href="#").btn.btn_accent.children-supa__btn Подробнее
+                  img(src="assets/images/arrow-right.png" alt="arrow-right")
+            .supaSlider-insideSlider__item
+              .supaSlider-insideSlider__item-content(style="background-image: url(assets/images/card.png);")
+                p.children-supa__suptitle Абонемент
+                p.children-supa__title Карта Gold Pass 
+                p.children-supa__text 360 дней
+                a(href="#").btn.btn_accent.children-supa__btn Подробнее
+                  img(src="assets/images/arrow-right.png" alt="arrow-right")
+            .supaSlider-insideSlider__item
+              .supaSlider-insideSlider__item-content(style="background-image: url(assets/images/card.png);")
+                p.children-supa__suptitle Абонемент
+                p.children-supa__title Карта Gold Pass 
+                p.children-supa__text 360 дней
+                a(href="#").btn.btn_accent.children-supa__btn Подробнее
+                  img(src="assets/images/arrow-right.png" alt="arrow-right")
+    .advantages.advantages_32.advantages_grayCircle
+      .advantages-wrap
+        h3.advantages__title Преимущества     
+        .advantages-row
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/icon/pool.png" alt="")
+            p.advantages-row-item__title 3 крытых</br>бассейна
+            p.advantages-row-item__text Lorem ipsum dolor,<br>sit amet
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/icon/hammam.png" alt="")
+            p.advantages-row-item__title Хаммам</br>ipsum
+            p.advantages-row-item__text Lorem ipsum dolor,<br>sit amet
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/icon/sauna.png" alt="")
+            p.advantages-row-item__title Финская</br>сауна
+            p.advantages-row-item__text Lorem ipsum dolor,<br>sit amet
+          .advantages-row-item 
+            .advantages-row-item__img
+              img(src="assets/images/icon/gantelya.png" alt="")
+            p.advantages-row-item__title 4 тренажерных</br>зала
+            p.advantages-row-item__text Lorem ipsum dolor,<br>sit amet
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/icon/coach.png" alt="")
+            p.advantages-row-item__title Персональные</br>тренировки
+            p.advantages-row-item__text Lorem ipsum dolor,<br>sit amet
+          .advantages-row-item
+            .advantages-row-item__img
+              img(src="assets/images/icon/hot-tub.png" alt="")
+            p.advantages-row-item__title Джакузи</br>ipsum
+            p.advantages-row-item__text Lorem ipsum dolor,<br>sit amet
+    .video
+      .video-wrap
+        p.defaultTitle.video__title Видео
+        p.defaultSubtitle.video__subtitle Краткое описание
+        <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
+    .stat
+      .stat-wrap.children-stat
+        .stat-item
+          p.stat-item__sup Сборов
+          p.stat-item__big 10
+        .stat-item
+          p.stat-item__sup Спортсменов
+          p.stat-item__big 50+
+        .stat-item
+          p.stat-item__sup Турниров
+          p.stat-item__big 15
+    .gallery.gallery_fitnes
+      .gallery-wrap
+        .gallery-left-desc
+          p.gallery-left-desc__title Фотогалерея
+          p.gallery-left-desc__text Детский лагерь
+        .galeryGrid
+          .galeryGrid-col
+            .galeryGrid-col-img
+              img(src="assets/images/fitnes-1.png", alt="")
+            .galeryGrid-col-img
+              img(src="assets/images/fitnes-2.png", alt="")
+          .galeryGrid-col
+            .galeryGrid-col-img
+              img(src="assets/images/fitnes-3.png", alt="")
+            .galeryGrid-col-img
+              img(src="assets/images/fitnes-4.png", alt="")
+            .galeryGrid-col-img
+              img(src="assets/images/fitnes-5.png", alt="")
+          .galeryGrid-col
+            .galeryGrid-col-img
+              img(src="assets/images/fitnes-6.png", alt="")
+            .galeryGrid-col-img
+              img(src="assets/images/fitnes-7.png", alt="")
