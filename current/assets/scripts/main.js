@@ -58,6 +58,12 @@ $(document).ready(function () {
         '<div class="carousel-slider__prev"><img style="transform: rotate(180deg);" src="assets/images/arrowSlider.png"></div>',
       nextArrow:
         '<div class="carousel-slider__next"><img src="assets/images/arrowSlider.png"></div>',
+      responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+        }
+      }]
     });
   }
 
