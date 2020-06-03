@@ -41,11 +41,13 @@ block content
       .stat-item
         p.stat-item__big 90%
         p.stat-item__small детей<br> возвращаются<br>к нам 
-  .textBlock.textBlock_rtl.textBlock_reab.children-camp-about
+  .textBlock.textBlock_rtl.textBlock_reab.children-camp-about.textBlock_lager
     .textBlock-wrap
       .textBlock-images
-        img(src="assets/images/child_camp/children-about-img1.png", alt="").textBlock-images__img
-        img(src="assets/images/child_camp/children-about-img2.png", alt="").textBlock-images__img
+        .textBlock-images-img
+          img(src="assets/images/child_camp/children-about-img1.png", alt="").textBlock-images__img
+        .textBlock-images-img
+          img(src="assets/images/child_camp/children-about-img2.png", alt="").textBlock-images__img
       .textBlock-desc
         h2.textBlock-desc__title Детский<br>лагерь
         p.textBlock-desc__text Круглогодичный детский оздоровительный лагерь "Эволюция" расположен в Крыму, г. Евпатория на первой линии Черного моря. Каждые зимние, весенние, летние и осенние  каникулы ребят ждут новые программы. Ежедневно: бассейн, спортивные игры, квесты, дискотеки. В лагере  дети в игровой форме развивают в себе лидерские качества, коммуникабельность, ловкость, внимание, творчество и смелость.
@@ -107,7 +109,7 @@ block content
       p.defaultSubtitle.video__subtitle Краткое описание
       <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
   .advantages.children__adv
-    .advantages-wrap
+    .advantages-wrap(style="background-image: url('assets/images/adv-bg.png');")
       h3.advantages__title Преимущества     
       .advantages-row
         .advantages-row-item
@@ -156,10 +158,11 @@ block content
       .call-text Введите свой номер телефона, и мы перезвоним Вам в течение 10 минут. Или выберете удобное время
       form.children-form
         input(type="number" placeholder="+7").children-form-input
-        select.children-form-select
-          option(value="") Прямо сейчас
-          option(value="") Прямо сейчас
-          option(value="") Прямо сейчас
+        .children-form-select-wrap
+          select.children-form-select
+            option(value="") Прямо сейчас
+            option(value="") Прямо сейчас
+            option(value="") Прямо сейчас
         button(type="submit").children-form-btn Жду звонка
       .call-text-down Нажимая на кнопку «Жду звонка», Вы принимаете условия
       a.call-text-down-link(href="#") Пользовательского соглашения
@@ -274,24 +277,24 @@ block content
           p.gallery-left-desc__text Детский лагерь
         .gallery-left-grid
           .gallery-left-grid-img
-            img(src="assets/images/child_camp/gallery/chld-gallery-img1.png", alt="")
-          .gallery-left-grid-img
             img(src="assets/images/child_camp/gallery/chld-gallery-img5.png", alt="")
-          .gallery-left-grid-img
-            img(src="assets/images/child_camp/gallery/chld-gallery-img6.png", alt="")
           .gallery-left-grid-img
             img(src="assets/images/child_camp/gallery/chld-gallery-img7.png", alt="")
           .gallery-left-grid-img
+            img(src="assets/images/child_camp/gallery/chld-gallery-img6.png", alt="")
+          .gallery-left-grid-img
             img(src="assets/images/child_camp/gallery/chld-gallery-img8.png", alt="")
+          .gallery-left-grid-img
+            img(src="assets/images/child_camp/gallery/chld-gallery-img1.png", alt="")
       .gallery-right
         .gallery-right-img  
           img(src="assets/images/child_camp/gallery/chld-gallery-img10.png", alt="")
         .gallery-right-img  
-          img(src="assets/images/child_camp/gallery/chld-gallery-img4.png", alt="")
-        .gallery-right-img  
           img(src="assets/images/child_camp/gallery/chld-gallery-img2.png", alt="")
         .gallery-right-img  
           img(src="assets/images/child_camp/gallery/chld-gallery-img3.png", alt="")
+        .gallery-right-img  
+          img(src="assets/images/child_camp/gallery/chld-gallery-img4.png", alt="")
         .gallery-right-img  
           img(src="assets/images/child_camp/gallery/chld-gallery-img9.png", alt="")
   

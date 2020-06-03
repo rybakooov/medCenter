@@ -14,6 +14,11 @@ $(document).ready(function () {
     $(this).next(".select-dropDown").toggleClass("open");
   });
 
+  $(document).on('click', '.supaSlider-insideSlider_chainHead .slick-current .supaSlider-insideSlider__item-content:not(.supaSlider-insideSlider__item-content_back) .children-supa__btn', function(e){
+    e.preventDefault();
+    $(this).closest('.slick-current').addClass('rotate')
+  })
+
   $(document).on("click", ".select-dropDown__item", function () {
     var html = $(this).html();
     $(this).closest(".select-dropDown").fadeOut();
@@ -288,5 +293,17 @@ $(document).ready(function () {
     }
   })
 
+  if($('.newYear-row').length && screen.width < 1024){
+    $('.newYear-row').owlCarousel({
+      items: 1,
+      nav : true,
+      pagination : false,
+      mouseDrag: false
+    })
+  }
 
+  $(document).on('click', '.team-item__btn', function(){
+    $(this).fadeOut();
+    $(this).prev('.team-item-content').css('opacity', '1');
+  })
 });

@@ -164,14 +164,15 @@ block content
         .call-text Введите свой номер телефона, и мы перезвоним Вам в течение 10 минут. Или выберете удобное время
         form.children-form
           input(type="number" placeholder="+7").children-form-input
-          select.children-form-select
-            option(value="") Прямо сейчас
-            option(value="") Прямо сейчас
-            option(value="") Прямо сейчас
+          .children-form-select-wrap
+            select.children-form-select
+              option(value="") Прямо сейчас
+              option(value="") Прямо сейчас
+              option(value="") Прямо сейчас
           button(type="submit").children-form-btn Жду звонка
         .call-text-down Нажимая на кнопку «Жду звонка», Вы принимаете условия
-        a.call-text-down-link(href="#") Пользовательского соглашения
-    .advantages.children__adv
+        a.call-text-down-link(href="#") Пользовательского соглашения 
+    .advantages.children__adv(style="background-image: url('assets/images/advbg-2.png');")
       .advantages-wrap
         h3.advantages__title Преимущества     
         .advantages-row
@@ -220,112 +221,6 @@ block content
         p.defaultTitle.video__title Видео
         p.defaultSubtitle.video__subtitle Краткое описание
         <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
-    .map
-      .map-wrap
-        p.defaultTitle.map__title Откуда к нам едут
-        .map-main
-          img(src="assets/images/child_camp/map.png", alt="").map-main__img
-          .map-main-baloon(data-top="14.5" data-left="73.5")
-            .map-main-baloon__dot
-            .map-main-baloon-main
-              p.map-main-baloon-main__title Заголовок
-              p.map-main-baloon-main__text Lorem ipsum dolor sit amet consectetur adipisicing
-        form.map-form
-          p.map-form__title А вы с какого города?
-          .map-form-row
-            .map-form-input
-              input(type="text" placeholder="Выбрать город")
-          p.map-form__title Оставьте след на карте, приезжай к нам в лагерь 
-          .map-form-row
-            .map-form-input
-              input(type="text" placeholder="Введите номер телефона")
-            .map-form-input
-              input(type="text" placeholder="Введите почту")
-            .map-form-input.map-form-input_btn
-              button(type="submit").btn Поеду к вам
-      .map-wrap
-        p.defaultTitle.map__title Как будем встречать Новый год
-        .newYear-row
-          .newYear-row-item
-            .newYear-row-item-content
-              p.newYear-row-item__day День
-              p.newYear-row-item__circle 1
-              p.newYear-row-item__what Новогодняя<br>зарядка
-            p.newYear-row-item__placeholder
-              span 8:00-9:00&nbsp;
-              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
-          .newYear-row-item
-            .newYear-row-item-content
-              p.newYear-row-item__day День
-              p.newYear-row-item__circle 2
-              p.newYear-row-item__what Игра<br>"Тайный друг"
-            p.newYear-row-item__placeholder
-              span 8:00-9:00&nbsp;
-              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
-          .newYear-row-item
-            .newYear-row-item-content
-              p.newYear-row-item__day День
-              p.newYear-row-item__circle 3
-              p.newYear-row-item__what Конкурс<br>газет
-            p.newYear-row-item__placeholder
-              span 8:00-9:00&nbsp;
-              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
-          .newYear-row-item
-            .newYear-row-item-content
-              p.newYear-row-item__day День
-              p.newYear-row-item__circle 4
-              p.newYear-row-item__what Час<br>отдыха
-            p.newYear-row-item__placeholder
-              span 8:00-9:00&nbsp;
-              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
-          .newYear-row-item
-            .newYear-row-item-content
-              p.newYear-row-item__day День
-              p.newYear-row-item__circle 5
-              p.newYear-row-item__what Новогодний<br>квест
-            p.newYear-row-item__placeholder
-              span 8:00-9:00&nbsp;
-              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
-          .newYear-row-item
-            .newYear-row-item-content
-              p.newYear-row-item__day День
-              p.newYear-row-item__circle 6
-              p.newYear-row-item__what Подготовка<br>к празднику
-            p.newYear-row-item__placeholder
-              span 8:00-9:00&nbsp;
-              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
-          .newYear-row-item
-            .newYear-row-item-content
-              p.newYear-row-item__day День
-              p.newYear-row-item__circle 7
-              p.newYear-row-item__what Праздничный<br>ужин
-            p.newYear-row-item__placeholder
-              span 8:00-9:00&nbsp;
-              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
-          .newYear-row-item
-            .newYear-row-item-content
-              p.newYear-row-item__day День
-              p.newYear-row-item__circle 8
-              p.newYear-row-item__what Концерт —<br>поздравление
-            p.newYear-row-item__placeholder
-              span 8:00-9:00&nbsp;
-              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
-          .newYear-row-item
-            .newYear-row-item-content
-              p.newYear-row-item__day День
-              p.newYear-row-item__circle 9
-              p.newYear-row-item__what Ярмарка<br>веселых затей
-            p.newYear-row-item__placeholder
-              span 8:00-9:00&nbsp;
-              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
-          .newYear-row-item
-            .newYear-row-item-content
-              p.newYear-row-item__day День
-              p.newYear-row-item__circle 10
-              p.newYear-row-item__what Встреча<br>Нового года
-            p.newYear-row-item__placeholder
-              span 8:00-9:00&nbsp;
-              | (обязательное наличие новогоднего элемента костюма, предварительно готовим эти элементы 30 декабря на мастер классах) Новогодний марафон. Поиска пропавшего Деда Мороза» Выполняют задания группами на время. 
     .sea
       .sea__wrapper
         img(src="assets/images/child_camp/sea/sea-bg.png", alt="").sea__wrapper-bg
@@ -458,24 +353,24 @@ block content
             p.gallery-left-desc__text Детский лагерь
           .gallery-left-grid
             .gallery-left-grid-img
-              img(src="assets/images/child_camp/gallery/chld-gallery-img1.png", alt="")
-            .gallery-left-grid-img
               img(src="assets/images/child_camp/gallery/chld-gallery-img5.png", alt="")
-            .gallery-left-grid-img
-              img(src="assets/images/child_camp/gallery/chld-gallery-img6.png", alt="")
             .gallery-left-grid-img
               img(src="assets/images/child_camp/gallery/chld-gallery-img7.png", alt="")
             .gallery-left-grid-img
+              img(src="assets/images/child_camp/gallery/chld-gallery-img6.png", alt="")
+            .gallery-left-grid-img
               img(src="assets/images/child_camp/gallery/chld-gallery-img8.png", alt="")
+            .gallery-left-grid-img
+              img(src="assets/images/child_camp/gallery/chld-gallery-img1.png", alt="")
         .gallery-right
           .gallery-right-img  
             img(src="assets/images/child_camp/gallery/chld-gallery-img10.png", alt="")
           .gallery-right-img  
-            img(src="assets/images/child_camp/gallery/chld-gallery-img4.png", alt="")
-          .gallery-right-img  
             img(src="assets/images/child_camp/gallery/chld-gallery-img2.png", alt="")
           .gallery-right-img  
             img(src="assets/images/child_camp/gallery/chld-gallery-img3.png", alt="")
+          .gallery-right-img  
+            img(src="assets/images/child_camp/gallery/chld-gallery-img4.png", alt="")
           .gallery-right-img  
             img(src="assets/images/child_camp/gallery/chld-gallery-img9.png", alt="")
     

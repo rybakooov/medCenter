@@ -164,14 +164,15 @@ block content
         .call-text Введите свой номер телефона, и мы перезвоним Вам в течение 10 минут. Или выберете удобное время
         form.children-form
           input(type="number" placeholder="+7").children-form-input
-          select.children-form-select
-            option(value="") Прямо сейчас
-            option(value="") Прямо сейчас
-            option(value="") Прямо сейчас
+          .children-form-select-wrap
+            select.children-form-select
+              option(value="") Прямо сейчас
+              option(value="") Прямо сейчас
+              option(value="") Прямо сейчас
           button(type="submit").children-form-btn Жду звонка
         .call-text-down Нажимая на кнопку «Жду звонка», Вы принимаете условия
         a.call-text-down-link(href="#") Пользовательского соглашения
-    .advantages.children__adv
+    .advantages.children__adv(style="background-image: url('assets/images/advbg-2.png');")
       .advantages-wrap
         h3.advantages__title Преимущества     
         .advantages-row
@@ -220,29 +221,6 @@ block content
         p.defaultTitle.video__title Видео
         p.defaultSubtitle.video__subtitle Краткое описание
         <iframe width="100%" height="535" src="https://www.youtube.com/embed/WnsNQRA_eOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
-    .map
-      .map-wrap
-        p.defaultTitle.map__title Откуда к нам едут
-        .map-main
-          img(src="assets/images/child_camp/map.png", alt="").map-main__img
-          .map-main-baloon(data-top="14.5" data-left="73.5")
-            .map-main-baloon__dot
-            .map-main-baloon-main
-              p.map-main-baloon-main__title Заголовок
-              p.map-main-baloon-main__text Lorem ipsum dolor sit amet consectetur adipisicing
-        form.map-form
-          p.map-form__title А вы с какого города?
-          .map-form-row
-            .map-form-input
-              input(type="text" placeholder="Выбрать город")
-          p.map-form__title Оставьте след на карте, приезжай к нам в лагерь 
-          .map-form-row
-            .map-form-input
-              input(type="text" placeholder="Введите номер телефона")
-            .map-form-input
-              input(type="text" placeholder="Введите почту")
-            .map-form-input.map-form-input_btn
-              button(type="submit").btn Поеду к вам
     .sea
       .sea__wrapper
         img(src="assets/images/child_camp/sea/sea-bg.png", alt="").sea__wrapper-bg
@@ -375,24 +353,24 @@ block content
             p.gallery-left-desc__text Детский лагерь
           .gallery-left-grid
             .gallery-left-grid-img
-              img(src="assets/images/child_camp/gallery/chld-gallery-img1.png", alt="")
-            .gallery-left-grid-img
               img(src="assets/images/child_camp/gallery/chld-gallery-img5.png", alt="")
-            .gallery-left-grid-img
-              img(src="assets/images/child_camp/gallery/chld-gallery-img6.png", alt="")
             .gallery-left-grid-img
               img(src="assets/images/child_camp/gallery/chld-gallery-img7.png", alt="")
             .gallery-left-grid-img
+              img(src="assets/images/child_camp/gallery/chld-gallery-img6.png", alt="")
+            .gallery-left-grid-img
               img(src="assets/images/child_camp/gallery/chld-gallery-img8.png", alt="")
+            .gallery-left-grid-img
+              img(src="assets/images/child_camp/gallery/chld-gallery-img1.png", alt="")
         .gallery-right
           .gallery-right-img  
             img(src="assets/images/child_camp/gallery/chld-gallery-img10.png", alt="")
           .gallery-right-img  
-            img(src="assets/images/child_camp/gallery/chld-gallery-img4.png", alt="")
-          .gallery-right-img  
             img(src="assets/images/child_camp/gallery/chld-gallery-img2.png", alt="")
           .gallery-right-img  
             img(src="assets/images/child_camp/gallery/chld-gallery-img3.png", alt="")
+          .gallery-right-img  
+            img(src="assets/images/child_camp/gallery/chld-gallery-img4.png", alt="")
           .gallery-right-img  
             img(src="assets/images/child_camp/gallery/chld-gallery-img9.png", alt="")
     
