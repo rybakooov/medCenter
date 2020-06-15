@@ -98,7 +98,7 @@ button {
         position: absolute;
         top: 0;
         left: -151px;
-        z-index: -1;
+        z-index: 0;
       }
       .banner-desc__title {
         text-transform: uppercase;
@@ -111,6 +111,7 @@ button {
       .banner-desc__text {
         font-size: 20px;
         margin-bottom: 0;
+        position: relative;
         margin-top: -20px;
       }
       .banner-desc__years {
@@ -258,7 +259,7 @@ button {
         left: 485px;
         z-index: 3;
         .banner-item-img-lg-md {
-          max-width: 202px;
+          width: 214px;
           height: 214px;
           padding: 5px;
         }
@@ -497,6 +498,11 @@ button {
   &_dark{
     background-color: #1e2953;
   }
+  &_winter{
+    .children-form-btn{
+      background-color: #7ec5dd !important;
+    }
+  }
   .call__wrap {
     max-width: 1200px;
     margin: 0 auto;
@@ -671,17 +677,20 @@ button {
     position: relative;
     .swim__wrapper-bg {
       position: absolute;
-      bottom: 63px;
-      right: -82px;
+      bottom: 75px;
+      right: -50px;
     }
     .swim__box {
       display: flex;
       justify-content: space-between;
-
+      &-img{
+        width: 50%;
+        padding-right: 20px;
+      }
       .swim__title-wrapper {
         padding-top: 50px;
-        max-width: 465px;
-        width: 100%;
+        padding-left: 20px;
+        width: 50%;
         .swim__title {
           font-size: 24px;
           padding-left: 20px;
@@ -700,7 +709,9 @@ button {
         }
         .swim__text {
           font-size: 17px;
-          font-weight: 20px;
+          line-height: 120%;
+          margin-top: 10px;
+          max-width: 518px;
         }
       }
     }
@@ -793,7 +804,7 @@ button {
 }
 .textBlock {
   &_group{
-    padding-top: 150px;
+    padding-top: 184px;
     padding-bottom: 30px;
     background-repeat: no-repeat;
     background-position: right top;
@@ -829,8 +840,8 @@ button {
       font-family: "Geometria";
       transform: translateX(-50%);
       &_lech{
-        letter-spacing: 46px;
-        width: 100%;
+        letter-spacing: 20px;
+        //width: 100%;
       }
     }
     &-img{
@@ -1682,59 +1693,6 @@ button {
           /*height: 260px;*/
         }
       }
-      &_chainHead{
-
-        .supaSlider-insideSlider__item{
-          display: flex !important;
-          flex-wrap: wrap;
-          background-color: #fff;
-          align-items: flex-start;
-          &:after, &:before{
-            display: none;
-          }
-          /*padding: 40px 70px 20px;*/
-          &__title{
-            width: 100%;
-            display: block; 
-            font-size: 30px;
-            font-weight: 900;
-            line-height: 110%;
-            position: relative;
-            &:after{
-              content: '';
-              height: 100%;
-              position: absolute;
-              top: 0;
-              left: -20px;
-              width: 3px;
-              background-color: #e52634;
-            }
-            margin-bottom: 10px;
-          }
-          &-col{
-            flex: 1;
-            &:nth-child(2){
-              margin-right: 20px;
-            }
-            &__title{
-              font-size: 15px;
-              line-height: 100%;
-              font-weight: 700;
-              margin-bottom: 15px;
-            }
-            &__text{
-              &:not(:last-child){
-                margin-bottom: 15px;
-              }
-              font-size: 15px;
-              line-height: 110%;
-            }
-            .children-supa__btn{
-              display: inline-flex !important;
-            }
-          }
-        }
-      }
       &Block {
         display: flex;
         position: absolute;
@@ -1827,6 +1785,9 @@ button {
       }
     }
   }
+  &-1200{
+    max-width: 1280px;
+  }
 }
 
 
@@ -1840,7 +1801,7 @@ button {
     display: flex;
     justify-content: space-between;
     z-index: 4;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
     padding: 0 35px;
 
     .supaSlider-insideSliderBlock__prev, .supaSlider-insideSliderBlock__next{
@@ -1954,6 +1915,7 @@ button {
         height: 440px;
         width: 100%;
         position: relative;
+        z-index: 2;
         &:before{
           content: '';
           width: 60%;
@@ -3444,7 +3406,7 @@ button {
 
 
 .solo{
-  padding-top: 130px;
+  padding-top: 184px;
   .textBlock-images-img:nth-child(1){
     width: 100%;
     img{
@@ -3538,6 +3500,8 @@ button {
     &-item{
       display: flex;
       height: 620px;
+      max-width: 900px;
+      margin: 0 auto;
       &-imgbox{
         margin-right: 30px;
         display: flex;
@@ -3562,7 +3526,7 @@ button {
         }
       }
       &-desc{
-        padding-right: 40px;
+        //padding-right: 40px;
         flex: 1 1 calc(100% - 410px);
         display: flex;
         flex-direction: column;
@@ -3659,16 +3623,60 @@ button {
 }
 
 .prices{
+  &.carousel{
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    background: linear-gradient(90deg, #f1f1f1 0%, #f1f1f1 50% ,#fff 50%, #fff 100%);
+    .supaSlider-item{
+      margin-bottom: 0;
+    }
+    &:after{
+      content: '';
+      background-color: #dedede;
+      width: 100%;
+      height: 220px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
   &-wrap{
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 40px 10px 0;
+    background: linear-gradient(180deg, #f1f1f1 0%, #f1f1f1 calc(100% - 220px), #dedede calc(100% - 220px), #dedede 100%);
+    z-index: 1;
+    position: relative;
+    &:after, &:before{
+      position: absolute;
+      content: 'Цены';
+      font-size: 150px;
+      line-height: 93px;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-family: "Geometria";
+    }
+    &:after{
+      left: 100%;
+      top: 50%;
+      transform-origin: top center;
+      color: #f1f1f1;
+      transform: rotate(-90deg) translate(0%, -253%);
+    }
+    &:before{
+      right: 100%;
+      top: 50%;
+      transform-origin: top center;
+      color: #fff;
+      transform: rotate(-90deg) translate(0%, 222%)
+    }
   }
   .supaSlider-insideSlider .slick-sprev{
-    transform: translate3d(-360px, 0, -20px);
+    transform: translate3d(-390px, 0, -20px);
   } 
   .supaSlider-insideSlider .slick-snext{
-    transform: translate3d(360px, 0, -20px);
+    transform: translate3d(390px, 0, -20px);
   }
   .supaSlider-insideSlider .slick-current{
     transform: translate3d(0, 0, 0px);
@@ -4130,6 +4138,77 @@ button {
 
 
 
+.supaSlider-insideSlider_chainHead{
+  .slick-sprev{
+    transform: translate3d(-310px, 0, -12px) !important;
+  }
+  .slick-snext{
+    transform: translate3d(310px, 0, -12px) !important;
+  }
+  &.supaSlider-insideSlider .slick-list{
+    padding-left: 240px !important;
+    padding-right: 240px !important;
+  }
+  .supaSlider-insideSlider__item{
+    display: flex !important;
+    flex-wrap: wrap;
+    background-color: #fff;
+    align-items: flex-start;
+    &__shadow{
+      position: absolute;
+      top: calc(100% - 3px);
+      left: -60px;
+      content: '';
+      background: radial-gradient(ellipse closest-side, rgba(120, 120, 120, 1), rgba(203, 203, 203, 0));
+      height: 8px;
+      width: calc(100% + 120px);
+    }
+    &:after, &:before{
+     // display: none;
+    }
+    /*padding: 40px 70px 20px;*/
+    &__title{
+      width: 100%;
+      display: block; 
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 110%;
+      position: relative;
+      &:after{
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -20px;
+        width: 3px;
+        background-color: #e52634;
+      }
+      margin-bottom: 10px;
+    }
+    &-col{
+      flex: 1;
+      &:nth-child(2){
+        margin-right: 20px;
+      }
+      &__title{
+        font-size: 15px;
+        line-height: 100%;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      &__text{
+        &:not(:last-child){
+          margin-bottom: 15px;
+        }
+        font-size: 15px;
+        line-height: 110%;
+      }
+      .children-supa__btn{
+        display: inline-flex !important;
+      }
+    }
+  }
+}
 
 
 @media screen and (max-width: 1023px){
