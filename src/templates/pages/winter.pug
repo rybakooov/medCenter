@@ -49,11 +49,13 @@ block content
       .stat-links
         a(href="#").btn.stat-links__link Другие смены
         a(href="#").btn.stat-links__link Программа
-  .textBlock.textBlock_rtl.textBlock_reab.children-camp-about
+  .textBlock.textBlock_rtl.textBlock_reab.children-camp-about.textBlock_lager
     .textBlock-wrap
       .textBlock-images
-        img(src="assets/images/child_camp/winter-camp-1.png", alt="").textBlock-images__img
-        img(src="assets/images/child_camp/winter-camp-2.png", alt="").textBlock-images__img
+        .textBlock-images-img
+          img(src="assets/images/child_camp/winter-camp-1.png", alt="").textBlock-images__img
+        .textBlock-images-img
+          img(src="assets/images/child_camp/winter-camp-2.png", alt="").textBlock-images__img
       .textBlock-desc
         h2.textBlock-desc__title Зимние<br>каникулы
         p.textBlock-desc__text Программа зимних каникул ориентирована на формирование здорового образа жизни и оздоровления детей и подростков. Детский лагерь «Эволюция» – это место, где дети могут проявить свои способности, найти друзей, отлично отдохнуть, а также приобрести новые знания, умения в спорте и творчестве, обрести титулы начинающих спортсменов.  
@@ -163,7 +165,7 @@ block content
               p.tarifes-list-item-prices__new 23 100&nbsp;
                 span руб
             a(href="#").btn.btn_darkblue.tarifes-list-item__btn Забронировать
-  .advantages.advantages_4.advantages_full
+  .advantages.advantages_4.advantages_full.adv-bg
     .advantages-wrap 
       p.defaultTitle.advantages__title Что ждет ваших детей 
       .advantages-row
@@ -379,6 +381,7 @@ block content
             input(type="text" placeholder="Введите почту")
           .map-form-input.map-form-input_btn
             button(type="submit").btn Поеду к вам
+  .map-bg
     .map-wrap
       p.defaultTitle.map__title Как будем встречать Новый год
       .newYear-row
@@ -524,7 +527,7 @@ block content
           .active__item-text
             span Активный отдых&nbsp; 
             | в 17 спортсооружениях центра подарит вам новую энергию и хорошее самочувствие.            
-          img(src="assets/images/child_camp/active/active-img2.jpg", alt="").active__item-img
+          img(src="assets/images/springOD-img.png", alt="").active__item-img
   .carousel.children__carousel
     .carousel-wrap
       h2.defaultTitle.carousel__title У нас не только зимняя смена
@@ -541,51 +544,12 @@ block content
         a.carousel-slider-item(style="background-image: url('assets/images/child_camp/slider/children-slider-half-summer.png');" href="#")
           .carousel-slider-item__title Осений<br>лагерь      
           .btn.btn_accent.carousel-slider-item__btn Подробнее
-            img(src="assets/images/arrow-right.png" alt="arrow-right")    
-        a.carousel-slider-item(style="background-image: url('assets/images/child_camp/slider/children-slider-half-winter.png');" href="#")
-          .carousel-slider-item__title Зимний<br>лагерь   
+            img(src="assets/images/arrow-right.png" alt="arrow-right")   
+        a.carousel-slider-item(style="background-image: url('assets/images/child_camp/slider/children-slider-half-summer.png');" href="#")
+          .carousel-slider-item__title Осений<br>лагерь      
           .btn.btn_accent.carousel-slider-item__btn Подробнее
-            img(src="assets/images/arrow-right.png" alt="arrow-right")
-  .children-supa
-    .supa-wrap
-      p.defaultTitle.supa__title Также для комфортного отдыха
-      .supaSlider-insideSlider-wrap.supaSlider-item
-        p.children-supa__placeholder Трансфер
-        <div class="supaSlider-insideSliderBlock">
-          <div class="supaSlider-insideSliderBlock__prev"><img style="transform: rotate(180deg);" src="assets/images/arrowSlider.png"></div>
-          <div class="supaSlider-insideSliderBlock__next"><img src="assets/images/arrowSlider.png"></div>
-        </div>
-        .supaSlider-insideSlider
-          .supaSlider-insideSlider__item
-            p.children-supa__text Трансфер
-            a(href="#").btn.btn_accent.children-supa__btn Подробнее
-              img(src="assets/images/arrow-right.png" alt="arrow-right")
-            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", style="width" alt="")
-          .supaSlider-insideSlider__item
-            p.children-supa__text Трансфер
-            a(href="#").btn.btn_accent.children-supa__btn Подробнее
-              img(src="assets/images/arrow-right.png" alt="arrow-right")
-            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
-          .supaSlider-insideSlider__item
-            p.children-supa__text Трансфер
-            a(href="#").btn.btn_accent.children-supa__btn Подробнее
-              img(src="assets/images/arrow-right.png" alt="arrow-right")
-            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
-          .supaSlider-insideSlider__item
-            p.children-supa__text Трансфер
-            a(href="#").btn.btn_accent.children-supa__btn Подробнее
-              img(src="assets/images/arrow-right.png" alt="arrow-right")
-            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
-          .supaSlider-insideSlider__item
-            p.children-supa__text Трансфер
-            a(href="#").btn.btn_accent.children-supa__btn Подробнее
-              img(src="assets/images/arrow-right.png" alt="arrow-right")
-            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
-          .supaSlider-insideSlider__item
-            p.children-supa__text Трансфер
-            a(href="#").btn.btn_accent.children-supa__btn Подробнее
-              img(src="assets/images/arrow-right.png" alt="arrow-right")
-            img(data-lazy="assets/images/child_camp/transport/transport-img1.jpg", alt="")
+            img(src="assets/images/arrow-right.png" alt="arrow-right") 
+  include ../common/transfer
   .gallery.gallery_children
     .gallery-wrap
       .gallery-left
