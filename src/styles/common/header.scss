@@ -118,6 +118,11 @@
     justify-content: center;
     flex: 1;
     transition: .3s;
+    img{
+      &:nth-child(2){
+        display: none;
+      }
+    }
     &:hover{
       opacity: 0.8;
     }
@@ -145,6 +150,14 @@
 
 
 
+@media screen and (max-width: 767px){
+  .header{
+    margin-bottom: 0;
+  }
+  .wrapper{
+    padding-top: 30px;
+  }
+}
 
 @media screen and (max-width: 600px){
   .header-phones__call p, .header-linklist__link_menu p{
@@ -159,16 +172,28 @@
   }
   .header__logo{
     flex: 2;
+    img{
+      &:nth-child(1){
+        display: none;
+      }
+      &:nth-child(2){
+        display: block;
+      }
+    }
+  }
+  .header-linklist__link:not(:last-child){
+    margin-right: 0;
   }
   .header-linklist, .header-phones{
     flex: 3;
   }
+
 }
 
 @media screen and (max-width: 479px){
   
   .header__logo{
-    flex: 1;
+    //flex: 1;
   }
   .header-linklist, .header-phones{
     flex: 1;

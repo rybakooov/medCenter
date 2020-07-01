@@ -1,3 +1,8 @@
+$.fn.toggleText = function(t1, t2){
+  if (this.text() == t1) this.text(t2);
+  else                   this.text(t1);
+  return this;
+};
 function hiddenInput(form) {
   var arr = form.find(".select-dropDown");
   var fullStr = "";
@@ -148,7 +153,29 @@ $(document).ready(function () {
       selectOnFocus: false,
     })*/
     $(".supaSlider-insideSlider").each(function(){
-
+      if($(this).hasClass('supaSlider-insideSlider_chainHead')){
+        $(this).slick({
+          speed: 1000,
+          arrows: false,
+          dots: false,
+          lazyLoad: 'ondemand',
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerPadding: '0',
+          draggable: false,
+          responsive: [{
+            breakpoint: 767,
+            settings: {
+              dots: true
+            }
+          }],
+          customPaging: function(slider, i) {
+            return '';
+          },
+        });
+      }
       $(this).slick({
         speed: 1000,
         arrows: false,
@@ -265,6 +292,18 @@ $(document).ready(function () {
   }
 
 
+  if(screen.width < 768 && $('.team-wrap').length){
+    $('.team-wrap').slick({
+      slidesToShow: 2,
+      dots: true,
+      responsive: [{
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
+    })
+  }
 
   $(document).on('click', '.shedule-tabs__tab:not(.active)', function(e){
     e.preventDefault();
@@ -303,7 +342,7 @@ $(document).ready(function () {
   }
 
   $(document).on('click', '.team-item__btn', function(){
-    $(this).fadeOut();
-    $(this).prev('.team-item-content').css('opacity', '1');
+    $(this).toggleText('Подробнее', 'Назад');
+    $(this).prev('.team-item-content').toggleClass('opacity1');
   })
 });

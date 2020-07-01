@@ -3405,6 +3405,7 @@ button {
     }
     &-content{
       position: relative;
+      background-position: center;
       z-index: 10;
       background-size: cover;
       padding: 0 70px;
@@ -5042,6 +5043,67 @@ button {
 
 
 @media screen and (max-width: 767px){
+  .pool{
+    display: flex;
+    flex-direction: column;
+    & > .textBlock{
+      order: 4;
+      margin-top: 30px;
+    }
+    .SL6{
+      margin-top: 0;
+    }
+  }
+  .prices.carousel .supaSlider-item{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .prices-wrap:before{
+    display: none;
+  }
+  .fitnes{
+    .bannerBgWrap{
+      position: static;
+      display: block;
+      height: 500px;
+      .bannerBg{
+        position: static;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .bannerWrap {
+      margin-top: -30px;
+      .banner{
+        display: none;
+      }
+    }
+  }
+  .supaSlider-insideSlider_chainHead, .team-wrap{
+    padding-top: 23px;
+  }
+  .supaSlider-insideSlider_chainHead .slick-dots, .team-wrap .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li{
+      margin-top: 20px;
+      height: 3px;
+      width: 25px;
+      background-color: #bdbdbd;
+      button{
+        display: none;
+      }
+      &.slick-active{
+        background-color: #000;
+      }
+      &:not(:last-child){
+        margin-right: 6px;
+      }
+    }
+  }
   .team-item{
     width: calc(100% - 20px);
   }
@@ -5170,7 +5232,17 @@ button {
     border-radius: 65px;
   }
   .SL6 .owl-nav .owl-prev, .SL6 .owl-nav .owl-next{
-    display: none;
+    //display: none;
+  }
+  .SL6-wrap{
+    overflow: visible;
+  }
+  .SL6 .owl-nav{
+    top: 120px;
+    width: calc(100% + 30px);
+  }
+  .SL6-SLIDER-item-imgbox-img:nth-child(2){
+    height: 240px;
   }
   .sales-row-col{
     display: flex;
@@ -5235,11 +5307,21 @@ button {
 
   .team-item__btn{
     display: flex;
-    background-color: red;
+    background-color: #2771d6;
     color: white;
   }
   .group-slider .owl-nav .owl-prev, .group-slider .owl-nav .owl-next{
-    display: none;
+    //display: none;
+  }
+  .group-slider .owl-nav{
+    top: 175px;
+    width: calc(100% + 30px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .group-slider{
+    max-width: calc(100% - 60px);
+    margin: 0 auto;
   }
   .group__subtitle{
     margin-bottom: 20px !important;
@@ -5247,6 +5329,111 @@ button {
   .textBlock_group{
     background-size: 100% auto;
     background-position: right bottom;
+  }
+  .group-slider .owl-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+      margin-top: 20px;
+      height: 3px;
+      width: 25px;
+      background-color: #bdbdbd;
+      &:not(:last-child){
+        margin-right: 6px;
+      }
+      &.active{
+        background-color: #000;
+      }
+    }
+  }
+  .shedule-wrap{
+    padding: 0 30px 40px;
+  }
+  .shedule__placeholder{
+    display: none;
+  }
+  .shedule-tabs{
+    flex-wrap: wrap;
+    margin: -5px -5px 5px;
+    justify-content: center;
+    &__tab{
+      margin: 5px !important;
+      white-space: nowrap;
+      flex: 0 1 calc(100% / 3 - 10px);
+      br{
+        display: none;
+      }
+    }
+  }
+  .shedule-main{
+    min-width: 0;
+    max-width: 100%;
+    overflow: auto;
+  }
+  .shedule-main-item{
+    min-width: 700px;
+    padding: 40px 0;
+  }
+  .team-item{
+    height: 450px !important;
+    background-position: center;
+  }
+  .opacity1{
+    opacity: 1 !important;
+  }
+  .team-item-content__name{
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .team-item-content{
+    padding: 10px 10px 48px;
+  }
+  .team-item-content__text{
+    font-size: 12px;
+    em, strong{
+      font-size: inherit;
+    }
+  }
+  .team{
+    .slick-arrow{
+      pointer-events: all;
+      font-size: 0;
+      width: 30px;
+      height: 30px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #e52634;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(../images/arrowSlider.png);
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.52);
+      box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.52);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -5px;
+      left: auto;
+      z-index: 10;
+      &.slick-prev{
+        left: -5px;
+        right: auto;
+        transform-origin: center;
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
   }
 }
 
